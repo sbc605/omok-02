@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
+<<<<<<< HEAD
   productGUID: 337016d7f60ab874081510fafe2fb0f2
+=======
+  productGUID: 49144ac3227c7554e81f940f82803e62
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -12,8 +16,13 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
+<<<<<<< HEAD
   companyName: DefaultCompany
   productName: Omok-02
+=======
+  companyName: Likelion-5-Omok
+  productName: omok-02
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -61,8 +70,13 @@ PlayerSettings:
   iosUseCustomAppBackgroundBehavior: 0
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
+<<<<<<< HEAD
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
+=======
+  allowedAutorotateToLandscapeRight: 0
+  allowedAutorotateToLandscapeLeft: 0
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
@@ -687,14 +701,22 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
+<<<<<<< HEAD
   metroPackageName: Omok-02
+=======
+  metroPackageName: omok-02
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
+<<<<<<< HEAD
   metroApplicationDescription: Omok-02
+=======
+  metroApplicationDescription: omok-02
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -765,11 +787,19 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: 84f1d22c-c2bd-41b9-babb-502183371882
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Omok-02
   organizationId: roooki
+=======
+  cloudProjectId: 08d07a28-0983-45d2-af79-dc612c6d5649
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: omok-02 2025-09-10_14-08-33
+  organizationId: lips8795
+>>>>>>> 7a042256db2bcd343a2c9f2d68d6d7e6777e0a1e
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
