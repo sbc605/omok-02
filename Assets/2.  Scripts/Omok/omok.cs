@@ -1,12 +1,61 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class omok : MonoBehaviour
+public class Omok : MonoBehaviour
 {
     [SerializeField] private Sprite whiteSprite;
     [SerializeField] private Sprite blackSprite;
+    private SpriteRenderer markerSR;
 
-    public enum BlockColor { None, White, Black }
+    public enum MarkerType { None, White, Black }
+    private MarkerType currentMarker = MarkerType.None;
 
-    private int omokIndex;
+    private int row, col;
+    private OmokController omokController;
+
+    private void Awake()
+    {
+        markerSR = GetComponent<SpriteRenderer>();
+    }
+
+    // 초기화(좌표와 컨트롤러 등록)
+    public void InitMarker(int r, int c, OmokController controller)
+    {
+        row = r;
+        col = c;
+        omokController = controller;
+        SetMarker(MarkerType.None);
+    }
+
+    // 마커 설정
+    public void SetMarker(MarkerType marker)
+    {
+        currentMarker = marker;
+
+        switch (marker)
+        {
+            case MarkerType.None:
+                markerSR.sprite = null;
+                break;
+            case MarkerType.White:
+                markerSR.sprite = whiteSprite;
+                break;
+            case MarkerType.Black:
+                markerSR.sprite = blackSprite;
+                break;
+        }
+    }
+
+    // 마커 상태 전달
+    public MarkerType GetMarker() => currentMarker;
+
+    // 터치 처리
+    private void OnClickButton()
+    {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // raycast가 UI를 터치하면 return
+            return;
+
+        omokController.OnBlockClicked(row, col);
+    }
 }
