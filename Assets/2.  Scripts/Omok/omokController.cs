@@ -4,20 +4,21 @@ public class OmokController : MonoBehaviour
 {
     [SerializeField] private Omok omokPrefab;
     private int boardSize = 15; // 15x15 오목판
+    private int cellSize = 1; // 격자 간격
 
     private Omok[,] board; // 오목판 상태 저장
     private Omok.MarkerType currentTurn = Omok.MarkerType.Black; // 현재 턴 (흑부터 시작)
-        
 
-    // 보드 초기화
-    private void InitBoard()
+    private void Start()
     {
         board = new Omok[boardSize, boardSize];
-
-        float spacing = 1f; // 오목칸 간격
-        Vector2 startPos = new Vector2();
-
     }
+
+    private void Update()
+    {
+        
+    }
+
 
     public void OnBlockClicked(int row, int col)
     {
