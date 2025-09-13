@@ -6,7 +6,7 @@ public class Omok : MonoBehaviour
 {
     [SerializeField] private Sprite whiteSprite;
     [SerializeField] private Sprite blackSprite;
-    private SpriteRenderer markerSR;
+    [SerializeField] private SpriteRenderer markerSR;
 
     public enum MarkerType { None, White, Black }
     private MarkerType currentMarker = MarkerType.None;
@@ -51,11 +51,11 @@ public class Omok : MonoBehaviour
     public MarkerType GetMarker() => currentMarker;
 
     // 터치 처리
-    private void OnClickButton()
+    private void OnMouseDown()
     {
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // raycast가 UI를 터치하면 return
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // UI 클릭 무시
             return;
 
-        omokController.OnBlockClicked(row, col);
+        omokController.OnCellClicked(row, col);
     }
 }
