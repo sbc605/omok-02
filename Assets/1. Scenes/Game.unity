@@ -1110,6 +1110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878905655}
   - component: {fileID: 878905654}
+  - component: {fileID: 878905656}
   m_Layer: 0
   m_Name: omok-board_15x15_0
   m_TagString: Untagged
