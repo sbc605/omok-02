@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class OmokController : MonoBehaviour
 {
+    // private PlayerState playerState;
+
     [SerializeField] private Omok omokPrefab;
     [SerializeField] private GameLogic gameLogic;
     [SerializeField] private float cellSize = 0.32f; // 셀 간격
@@ -77,6 +79,8 @@ public class OmokController : MonoBehaviour
             var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
             board[row, col].SetMarker(markerType);
+
+            // playerState.UpdateUI(gameLogic.currentTurn);
         }
 
         // 자리 비움
