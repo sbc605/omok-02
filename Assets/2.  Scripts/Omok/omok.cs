@@ -6,9 +6,10 @@ public class Omok : MonoBehaviour
 {
     [SerializeField] private Sprite whiteSprite;
     [SerializeField] private Sprite blackSprite;
+    [SerializeField] private Sprite previewSprite;
     [SerializeField] private SpriteRenderer markerSR;
 
-    public enum MarkerType { None, White, Black }
+    public enum MarkerType { None, White, Black, Preview }
     private MarkerType currentMarker = MarkerType.None;
 
     private int row, col;
@@ -19,7 +20,7 @@ public class Omok : MonoBehaviour
         markerSR = GetComponent<SpriteRenderer>();
     }
 
-    // √ ±‚»≠(¡¬«•øÕ ƒ¡∆Æ∑—∑Ø µÓ∑œ)
+    // Ï¥àÍ∏∞Ìôî(Ï¢åÌëú Î∞è Ïª®Ìä∏Î°§Îü¨ ÏÑ§Ï†ï)
     public void InitMarker(int r, int c, OmokController controller)
     {
         row = r;
@@ -28,7 +29,7 @@ public class Omok : MonoBehaviour
         SetMarker(MarkerType.None);
     }
 
-    // ∏∂ƒø º≥¡§
+    // ÎßàÏª§ ÏÑ§Ï†ï
     public void SetMarker(MarkerType marker)
     {
         currentMarker = marker;
@@ -44,16 +45,20 @@ public class Omok : MonoBehaviour
             case MarkerType.Black:
                 markerSR.sprite = blackSprite;
                 break;
+            case MarkerType.Preview:
+                markerSR.sprite = previewSprite;
+                break;
+
         }
     }
 
-    // ∏∂ƒø ªÛ≈¬ ¿¸¥ﬁ
+    // ÎßàÏª§ ÏÉÅÌÉú Ï†ÑÎã¨
     public MarkerType GetMarker() => currentMarker;
 
-    // ≈Õƒ° √≥∏Æ
+    // ÌÑ∞Ïπò Ï≤òÎ¶¨
     private void OnMouseDown()
     {
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // UI ≈¨∏Ø π´Ω√
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // UI ÌÅ¥Î¶≠ Î¨¥Ïãú
             return;
 
         omokController.OnCellClicked(row, col);
