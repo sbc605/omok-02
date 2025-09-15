@@ -105,5 +105,7 @@ public class GameLogic : MonoBehaviour
         // UI 출력, 게임 오버 패널 띄우기 등
         Debug.Log($"Game Over : {result}");
         // 필요하다면 입력 막기, 재시작 버튼 활성화 등
+        
+        //브랜치 테스트
     }
 }
