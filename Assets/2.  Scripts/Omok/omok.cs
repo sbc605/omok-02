@@ -20,7 +20,7 @@ public class Omok : MonoBehaviour
         markerSR = GetComponent<SpriteRenderer>();
     }
 
-    // ÃÊ±âÈ­(ÁÂÇ¥¿Í ÄÁÆ®·Ñ·¯ µî·Ï)
+    // ì´ˆê¸°í™”(ì¢Œí‘œ ë° ì»¨íŠ¸ë¡¤ëŸ¬ ì„¤ì •)
     public void InitMarker(int r, int c, OmokController controller)
     {
         row = r;
@@ -29,7 +29,7 @@ public class Omok : MonoBehaviour
         SetMarker(MarkerType.None);
     }
 
-    // ¸¶Ä¿ ¼³Á¤
+    // ë§ˆì»¤ ì„¤ì •
     public void SetMarker(MarkerType marker)
     {
         currentMarker = marker;
@@ -52,13 +52,13 @@ public class Omok : MonoBehaviour
         }
     }
 
-    // ¸¶Ä¿ »óÅÂ Àü´Ş
+    // ë§ˆì»¤ ìƒíƒœ ì „ë‹¬
     public MarkerType GetMarker() => currentMarker;
 
-    // ÅÍÄ¡ Ã³¸®
+    // í„°ì¹˜ ì²˜ë¦¬
     private void OnMouseDown()
     {
-        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // UI Å¬¸¯ ¹«½Ã
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) // UI í´ë¦­ ë¬´ì‹œ
             return;
 
         omokController.OnCellClicked(row, col);

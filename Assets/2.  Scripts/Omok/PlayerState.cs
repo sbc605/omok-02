@@ -3,10 +3,14 @@ using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
-    public enum PlayerType { None, PlayerA, PlayerB }
-    public PlayerType playerType = PlayerType.None;
-
+    private GameLogic.PlayerType playerType;
     private bool isMyTurn;
+
+    public PlayerState(bool isTurn)
+    {
+        isMyTurn = isTurn;
+        playerType = isTurn ? GameLogic.PlayerType.player : GameLogic.PlayerType.CPU;
+    }
 
 
 }
