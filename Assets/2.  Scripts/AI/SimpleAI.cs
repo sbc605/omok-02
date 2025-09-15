@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SimpleAI : MonoBehaviour
 {
-    // ³­ÀÌµµº° µ¿ÀÛ ¿¹½Ã
+    // ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public enum Difficulty { Easy, Normal, Hard }
     public Difficulty difficulty = Difficulty.Easy;
 
-    // ³­¼ö ±â¹Ý ÁÂÇ¥ ¼±ÅÃ (ÀÓ½Ã)
+    // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½ (ï¿½Ó½ï¿½)
     public Vector2Int GetNextMove(GameLogic.StoneType[,] board)
     {
         int size = board.GetLength(0);
