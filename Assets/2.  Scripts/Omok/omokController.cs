@@ -1,19 +1,20 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public class OmokController : MonoBehaviour
 {
     [SerializeField] private Omok omokPrefab;
+    [SerializeField] private GameLogic gameLogic;
     [SerializeField] private float cellSize = 0.32f; // 셀 간격
-    private Vector2 boardOrigin = new Vector2(0, -0.24f); // 보드 시작 위치(중심)
-    private int boardSize = 15;
-    private Omok[,] board; // 오목판 상태 저장
+    public Vector2 boardOrigin = new Vector2(0, -0.24f); // 보드 시작 위치(중심)
 
-    private Omok.MarkerType currentTurn = Omok.MarkerType.Black; // 현재 턴 (흑부터 시작)
-
-    private Vector2Int? selectedCell = null; // 임시 선택된 칸
+    private Omok[,] board; // 오목판 상태 저장    
+    private int? selectedRow = null;
+    private int? selectedCol = null;
 
     private void Start()
     {
+        int boardSize = gameLogic.boardSize; // 게임로직에서 보드 크기 가져오기
         board = new Omok[boardSize, boardSize];
 
         // 전체 크기
@@ -36,40 +37,51 @@ public class OmokController : MonoBehaviour
                 board[r, c] = cell;
             }
         }
+
+        // 시작시 중앙 흑돌 착수
+        int centerRow = boardSize / 2;
+        int centerCol = boardSize / 2;
+        board[centerRow, centerCol].SetMarker(Omok.MarkerType.Black);
     }
 
-    // 임시 선택
+    // 좌표 클릭시 임시 선택 표시
     public void OnCellClicked(int row, int col)
     {
-        // 이미 착수된 곳 표시 불가
-        if (board[row, col].GetMarker() != Omok.MarkerType.None)
-            return;
-
-        // 이전 선택 해제
-        if (selectedCell.HasValue)
+        // 이전 선택 지우기
+        if (selectedRow.HasValue && selectedCol.HasValue)
         {
-            var prev = selectedCell.Value;
-            if (board[prev.x, prev.y].GetMarker() != Omok.MarkerType.None)
-                board[prev.x, prev.y].SetMarker(Omok.MarkerType.None);
+            var prevCell = board[selectedRow.Value, selectedCol.Value];
+            if (prevCell.GetMarker() != Omok.MarkerType.None)
+                prevCell.SetMarker(Omok.MarkerType.None);
         }
 
-        // 임시 표시
-        board[row, col].SetMarker(currentTurn);
-        selectedCell = new Vector2Int(row, col);
+        // 새 선택 표시
+        selectedRow = row;
+        selectedCol = col;
+
+        // selector 표시
+        board[row, col].SetMarker(Omok.MarkerType.Preview);
     }
 
-    // 착수버튼 연결
+    // 착수 확정
     public void ConfirmMove()
     {
-        if (!selectedCell.HasValue) return; // 선택 없으면 무시
+        if (!selectedRow.HasValue || !selectedCol.HasValue) return; // 선택된 셀이 없음 
 
-        var cell = selectedCell.Value;       
+        int row = selectedRow.Value;
+        int col = selectedCol.Value;
 
-        // 턴 교체
-        currentTurn = (currentTurn == Omok.MarkerType.Black)
-            ? Omok.MarkerType.White
-            : Omok.MarkerType.Black;
+        if (gameLogic.PlaceStone(row, col)) // 게임로직에서 착수 성공
+        {
+            // 착수 성공 시 오목판에도 표시
+            var stone = gameLogic.GetStone(row, col);
+            var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
-        selectedCell = null; // 선택 초기화
+            board[row, col].SetMarker(markerType);
+        }
+
+        // 선택 해제
+        selectedRow = null;
+        selectedCol = null;
     }
 }

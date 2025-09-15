@@ -6,9 +6,10 @@ public class Omok : MonoBehaviour
 {
     [SerializeField] private Sprite whiteSprite;
     [SerializeField] private Sprite blackSprite;
+    [SerializeField] private Sprite previewSprite;
     [SerializeField] private SpriteRenderer markerSR;
 
-    public enum MarkerType { None, White, Black }
+    public enum MarkerType { None, White, Black, Preview }
     private MarkerType currentMarker = MarkerType.None;
 
     private int row, col;
@@ -44,6 +45,10 @@ public class Omok : MonoBehaviour
             case MarkerType.Black:
                 markerSR.sprite = blackSprite;
                 break;
+            case MarkerType.Preview:
+                markerSR.sprite = previewSprite;
+                break;
+
         }
     }
 
