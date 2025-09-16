@@ -69,10 +69,9 @@ public class GameLogic : MonoBehaviour
         return true;
     }
 
-    // board와 currentTurn 접근용
+    // board, currentTurn 접근용
     public StoneType GetStone(int row, int col) => board[row, col]; // 특정 위치의 돌 상태 반환
     public StoneType GetCurrentTurn() => currentTurn; // 현재 턴 반환
-    public PlayerType GetCurrentPlayer() => PlayerType.player; // 현재 플레이어 반환
 
     private bool CheckWin(int r, int c) // 승부 여부 체크
     {

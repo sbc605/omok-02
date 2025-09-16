@@ -48,7 +48,7 @@ public class OmokController : MonoBehaviour
     public void OnCellClicked(int row, int col)
     {
         // 내 턴이 아닌 경우 무시
-        if (playerState.GetPlayerType() != gameLogic.GetCurrentPlayer())
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
             Debug.Log("상대방의 턴입니다.");
             return;
@@ -83,7 +83,7 @@ public class OmokController : MonoBehaviour
         if (!selectedRow.HasValue || !selectedCol.HasValue) return;
 
         // 내 턴이 맞는지 확인
-        if (playerState.GetPlayerType() != gameLogic.GetCurrentPlayer())
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
             Debug.Log("상대방의 턴입니다.");
             return;
