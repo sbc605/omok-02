@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class GameLogic : MonoBehaviour
 {
@@ -6,9 +7,14 @@ public class GameLogic : MonoBehaviour
     // 현재 돌 배치 상태
     private StoneType[,] board;   // StoneType.None / Black / White
 
-    public enum StoneType { None, Black, White } 
-    private StoneType currentTurn = StoneType.Black; //흑 선공
+    // 바둑돌 관련
+    public enum StoneType { None, Black, White }
+    private StoneType currentTurn = StoneType.Black; // 흑 선공
 
+    public enum PlayerType { player, CPU }; //플레이어 or AI
+    public PlayerType currentPlayer;
+
+    public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출(GameLogic에서만 사용해서 event)
     public enum PlayerType { Player, CPU } //플레이어 or AI
     public enum GameResult { None, Win, Lose, Draw }
 
@@ -16,10 +22,16 @@ public class GameLogic : MonoBehaviour
     {
         board = new StoneType[boardSize, boardSize];
         currentTurn = StoneType.Black;
+        currentPlayer = PlayerType.player;
 
         int centerRow = boardSize / 2;
         int centerCol = boardSize / 2;
-        PlaceStone(centerRow, centerCol);
+        board[centerRow, centerCol] = StoneType.Black; // PlaceStone 직접 호출보다 board 상태만 변경
+
+        // 턴 변경
+        currentTurn = StoneType.White;
+        currentPlayer = PlayerType.CPU;
+        OnTurnChanged?.Invoke(currentPlayer);
     }
 
     /// <summary>착수</summary>
@@ -56,8 +68,16 @@ public class GameLogic : MonoBehaviour
 
         // 턴 전환
         currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
+        currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
+        OnTurnChanged?.Invoke(currentPlayer);
+
         return true;
     }
+
+    // board, currentTurn 접근용
+    public StoneType GetStone(int row, int col) => board[row, col]; // 특정 위치의 돌 상태 반환
+    public StoneType GetCurrentTurn() => currentTurn; // 현재 턴 반환
+    
 
     // ───────── 금수 판정 ─────────
     private bool IsForbiddenMove(int row, int col)
@@ -68,6 +88,7 @@ public class GameLogic : MonoBehaviour
         bool overline     = CreatesOverline(row, col);
         int openThreeCnt  = CountOpenThree(row, col);
         int openFourCnt   = CountOpenFour (row, col);
+
 
         board[row, col] = StoneType.None; // 복구
 

@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class OmokController : MonoBehaviour
 {
-    // private PlayerState playerState;
-
+    [SerializeField] private PlayerState playerState;
     [SerializeField] private Omok omokPrefab;
     [SerializeField] private GameLogic gameLogic;
     [SerializeField] private float cellSize = 0.32f; // 셀 간격
@@ -48,7 +47,21 @@ public class OmokController : MonoBehaviour
     // 좌표 클릭시 UI 표시
     public void OnCellClicked(int row, int col)
     {
-        // 이전 선택 지우기
+        // 내 턴이 아닌 경우 무시
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
+        {
+            Debug.Log("상대방의 턴입니다.");
+            return;
+        }
+
+        // 이미 돌이 있는 곳은 무시
+        if (gameLogic.GetStone(row, col) != GameLogic.StoneType.None)
+        {
+            Debug.Log("이미 돌이 있는 곳입니다.");
+            return;
+        }
+
+        // 이전 선택 셀이 비어있는 경우 None으로 되돌림
         if (selectedRow.HasValue && selectedCol.HasValue)
         {
             var prevCell = board[selectedRow.Value, selectedCol.Value];
@@ -67,7 +80,14 @@ public class OmokController : MonoBehaviour
     // 착수 확인
     public void ConfirmMove()
     {
-        if (!selectedRow.HasValue || !selectedCol.HasValue) return; // ���õ� ���� ���� 
+        if (!selectedRow.HasValue || !selectedCol.HasValue) return;
+
+        // 내 턴이 맞는지 확인
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
+        {
+            Debug.Log("상대방의 턴입니다.");
+            return;
+        }
 
         int row = selectedRow.Value;
         int col = selectedCol.Value;
@@ -79,8 +99,6 @@ public class OmokController : MonoBehaviour
             var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
             board[row, col].SetMarker(markerType);
-
-            // playerState.UpdateUI(gameLogic.currentTurn);
         }
 
         // 자리 비움
