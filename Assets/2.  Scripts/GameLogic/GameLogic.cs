@@ -13,7 +13,7 @@ public class GameLogic : MonoBehaviour
     private StoneType currentTurn = StoneType.Black; // 흑 선공
 
     public enum PlayerType { player, CPU }; //플레이어 or AI
-    public PlayerType currentPlayer = PlayerType.player;
+    public PlayerType currentPlayer;
 
     public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출(GameLogic에서만 사용해서 event)
 
