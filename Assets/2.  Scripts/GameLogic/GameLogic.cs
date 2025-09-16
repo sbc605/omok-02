@@ -13,9 +13,8 @@ public class GameLogic : MonoBehaviour
 
     public enum PlayerType { player, CPU }; //플레이어 or AI
     public PlayerType currentPlayer;
-
     public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출(GameLogic에서만 사용해서 event)
-    public enum PlayerType { Player, CPU } //플레이어 or AI
+
     public enum GameResult { None, Win, Lose, Draw }
 
     void Start() //보드 배열 초기화 및 흑돌 중앙 착수 시작
@@ -78,7 +77,6 @@ public class GameLogic : MonoBehaviour
     public StoneType GetStone(int row, int col) => board[row, col]; // 특정 위치의 돌 상태 반환
     public StoneType GetCurrentTurn() => currentTurn; // 현재 턴 반환
     
-
     // ───────── 금수 판정 ─────────
     private bool IsForbiddenMove(int row, int col)
     {
@@ -167,9 +165,7 @@ public class GameLogic : MonoBehaviour
     }
 
     // ───────── 기존 승패 로직 ─────────
-    public StoneType GetStone(int row, int col) => board[row, col];
-    public StoneType GetCurrentTurn() => currentTurn;
-
+    
     private bool CheckWin(int r, int c) // 승리 판독
     {
         Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
