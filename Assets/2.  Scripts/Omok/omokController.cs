@@ -47,12 +47,12 @@ public class OmokController : MonoBehaviour
     // 좌표 클릭시 UI 표시
     public void OnCellClicked(int row, int col)
     {
-        // 내 턴이 아닌 경우 무시
+        /* 내 턴이 아닌 경우 무시 (임시 주석처리)
         if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
             Debug.Log("상대방의 턴입니다.");
             return;
-        }
+        } */
 
         // 이미 돌이 있는 곳은 무시
         if (gameLogic.GetStone(row, col) != GameLogic.StoneType.None)
@@ -82,12 +82,12 @@ public class OmokController : MonoBehaviour
     {
         if (!selectedRow.HasValue || !selectedCol.HasValue) return;
 
-        // 내 턴이 맞는지 확인
+        /* 내 턴이 맞는지 확인
         if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
             Debug.Log("상대방의 턴입니다.");
             return;
-        }
+        } */
 
         int row = selectedRow.Value;
         int col = selectedCol.Value;
