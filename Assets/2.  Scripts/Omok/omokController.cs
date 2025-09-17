@@ -2,24 +2,25 @@ using UnityEngine;
 
 public class OmokController : MonoBehaviour
 {
+    [SerializeField] private PlayerState playerState;
     [SerializeField] private Omok omokPrefab;
-    [SerializeField] private float cellSize = 0.32f; // ¼¿ °£°İ
-    private Vector2 boardOrigin = new Vector2(0, -0.24f); // º¸µå ½ÃÀÛ À§Ä¡(Áß½É)
-    private int boardSize = 15;
-    private Omok[,] board; // ¿À¸ñÆÇ »óÅÂ ÀúÀå
+    [SerializeField] private GameLogic gameLogic;
+    [SerializeField] private float cellSize = 0.32f; // ì…€ ê°„ê²©
+    private Vector2 boardOrigin = new Vector2(0, -0.24f); // ë³´ë“œ ì‹œì‘ ìœ„ì¹˜(ì¤‘ì‹¬)
 
-    private Omok.MarkerType currentTurn = Omok.MarkerType.Black; // ÇöÀç ÅÏ (ÈæºÎÅÍ ½ÃÀÛ)
-
-    private Vector2Int? selectedCell = null; // ÀÓ½Ã ¼±ÅÃµÈ Ä­
+    private Omok[,] board; // ì˜¤ëª©íŒ ìƒíƒœ ì €ì¥ 
+    private int? selectedRow = null;
+    private int? selectedCol = null;
 
     private void Start()
     {
+        int boardSize = gameLogic.boardSize; // ê²Œì„ë¡œì§ì—ì„œ ë³´ë“œ í¬ê¸° ê°€ì ¸ì˜¤ê¸°
         board = new Omok[boardSize, boardSize];
 
-        // ÀüÃ¼ Å©±â
+        // ì „ì²´ í¬ê¸°
         float totalSize = (boardSize - 1) * cellSize;
 
-        // ½ÃÀÛ ÁÂÇ¥(boardOrigin ±âÁØ)
+        // ì‹œì‘ ì¢Œí‘œ(boardOrigin ê¸°ì¤€)
         float startX = boardOrigin.x - totalSize / 2f;
         float startY = boardOrigin.y + totalSize / 2f;
 
@@ -36,40 +37,72 @@ public class OmokController : MonoBehaviour
                 board[r, c] = cell;
             }
         }
+
+        // ì¤‘ì•™ì— ìë™ í‘ëŒ ì°©ìˆ˜
+        int centerRow = boardSize / 2;
+        int centerCol = boardSize / 2;
+        board[centerRow, centerCol].SetMarker(Omok.MarkerType.Black);
     }
 
-    // ÀÓ½Ã ¼±ÅÃ
+    // ì¢Œí‘œ í´ë¦­ì‹œ UI í‘œì‹œ
     public void OnCellClicked(int row, int col)
     {
-        // ÀÌ¹Ì Âø¼öµÈ °÷ Ç¥½Ã ºÒ°¡
-        if (board[row, col].GetMarker() != Omok.MarkerType.None)
-            return;
-
-        // ÀÌÀü ¼±ÅÃ ÇØÁ¦
-        if (selectedCell.HasValue)
+        // ë‚´ í„´ì´ ì•„ë‹Œ ê²½ìš° ë¬´ì‹œ
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
-            var prev = selectedCell.Value;
-            if (board[prev.x, prev.y].GetMarker() != Omok.MarkerType.None)
-                board[prev.x, prev.y].SetMarker(Omok.MarkerType.None);
+            Debug.Log("ìƒëŒ€ë°©ì˜ í„´ì…ë‹ˆë‹¤.");
+            return;
         }
 
-        // ÀÓ½Ã Ç¥½Ã
-        board[row, col].SetMarker(currentTurn);
-        selectedCell = new Vector2Int(row, col);
+        // ì´ë¯¸ ëŒì´ ìˆëŠ” ê³³ì€ ë¬´ì‹œ
+        if (gameLogic.GetStone(row, col) != GameLogic.StoneType.None)
+        {
+            Debug.Log("ì´ë¯¸ ëŒì´ ìˆëŠ” ê³³ì…ë‹ˆë‹¤.");
+            return;
+        }
+
+        // ì´ì „ ì„ íƒ ì…€ì´ ë¹„ì–´ìˆëŠ” ê²½ìš° Noneìœ¼ë¡œ ë˜ëŒë¦¼
+        if (selectedRow.HasValue && selectedCol.HasValue)
+        {
+            var prevCell = board[selectedRow.Value, selectedCol.Value];
+            if (prevCell.GetMarker() != Omok.MarkerType.None)
+                prevCell.SetMarker(Omok.MarkerType.None);
+        }
+
+        // ìƒˆ ì¢Œí‘œ ìƒì„±
+        selectedRow = row;
+        selectedCol = col;
+
+        // selector í‘œì‹œ
+        board[row, col].SetMarker(Omok.MarkerType.Preview);
     }
 
-    // Âø¼ö¹öÆ° ¿¬°á
+    // ì°©ìˆ˜ í™•ì¸
     public void ConfirmMove()
     {
-        if (!selectedCell.HasValue) return; // ¼±ÅÃ ¾øÀ¸¸é ¹«½Ã
+        if (!selectedRow.HasValue || !selectedCol.HasValue) return;
 
-        var cell = selectedCell.Value;       
+        // ë‚´ í„´ì´ ë§ëŠ”ì§€ í™•ì¸
+        if (playerState.GetPlayerType() != gameLogic.currentPlayer)
+        {
+            Debug.Log("ìƒëŒ€ë°©ì˜ í„´ì…ë‹ˆë‹¤.");
+            return;
+        }
 
-        // ÅÏ ±³Ã¼
-        currentTurn = (currentTurn == Omok.MarkerType.Black)
-            ? Omok.MarkerType.White
-            : Omok.MarkerType.Black;
+        int row = selectedRow.Value;
+        int col = selectedCol.Value;
 
-        selectedCell = null; // ¼±ÅÃ ÃÊ±âÈ­
+        if (gameLogic.PlaceStone(row, col)) // ê²Œì„ë¡œì§ì—ì„œ ì°©ìˆ˜ ì‹œë„
+        {
+            // ì°©ìˆ˜ ì„±ê³µ ì‹œ ì˜¤ëª©íŒì— í‘œì‹œ
+            var stone = gameLogic.GetStone(row, col);
+            var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
+
+            board[row, col].SetMarker(markerType);
+        }
+
+        // ìë¦¬ ë¹„ì›€
+        selectedRow = null;
+        selectedCol = null;
     }
 }

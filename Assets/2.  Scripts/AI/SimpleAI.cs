@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class SimpleAI : MonoBehaviour
-{
+public class SimpleAI : MonoBehaviour{
+
     public enum Difficulty { Easy, Normal, Hard }
     public Difficulty difficulty = Difficulty.Easy;
 
     public Vector2Int lastMove = new Vector2Int(-1, -1);
-
+  
     public Vector2Int GetNextMove(GameLogic.StoneType[,] board)
     {
         switch (difficulty)
@@ -22,7 +22,7 @@ public class SimpleAI : MonoBehaviour
         }
     }
 
-    // Easy : ¿ÏÀü ·£´ý
+    // Easy : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     private Vector2Int GetRandomMove(GameLogic.StoneType[,] board)
     {
         int size = board.GetLength(0);
@@ -35,7 +35,7 @@ public class SimpleAI : MonoBehaviour
         }
     }
 
-    // Normal : ¸¶Áö¸· Âø¼ö ÁÖº¯¿¡¼­ ·£´ý
+    // Normal : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     private Vector2Int GetNearbyMove(GameLogic.StoneType[,] board)
     {
         int size = board.GetLength(0);
@@ -56,7 +56,7 @@ public class SimpleAI : MonoBehaviour
         return GetRandomMove(board);
     }
 
-    // Hard : Á¡¼ö ±â¹Ý
+    // Hard : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
     private Vector2Int GetBestMove(GameLogic.StoneType[,] board)
     {
         int size = board.GetLength(0);
@@ -94,7 +94,7 @@ public class SimpleAI : MonoBehaviour
             int oppCount = CountConsecutive(board, row, col, d, GameLogic.StoneType.Black);
 
             score += myCount * 10;
-            score += oppCount * 15; // ¸·´Â °É ´õ Áß¿ä½Ã
+            score += oppCount * 15; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ß¿ï¿½ï¿½
         }
 
         return score;
