@@ -3,6 +3,9 @@ using System;
 
 public class GameLogic : MonoBehaviour
 {
+    // ★ 현재 턴 수 (1턴 = 흑 첫 수부터 시작)
+    public int turnCount = 1;
+    
     public int boardSize = 15; // 몇 줄짜리 보드인지 (15x15나 19x19)
     // 현재 돌 배치 상태
     private StoneType[,] board;   // StoneType.None / Black / White
@@ -40,7 +43,7 @@ public class GameLogic : MonoBehaviour
         if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return false;
         if (board[row, col] != StoneType.None) return false;
 
-        // ★ 금수 검사 : 흑만 적용
+        // 금수 검사 : 흑만 적용
         if (currentTurn == StoneType.Black && IsForbiddenMove(row, col))
         {
             // 금수일 경우 x표시 UI출력 코드 필요합니다.
@@ -64,10 +67,15 @@ public class GameLogic : MonoBehaviour
             EndGame(GameResult.Draw);
             return true;
         }
+        
 
         // 턴 전환
         currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
         currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
+
+        // ★ 턴 수 증가
+        turnCount++;
+
         OnTurnChanged?.Invoke(currentPlayer);
 
         return true;
