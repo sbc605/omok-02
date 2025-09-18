@@ -70,6 +70,8 @@ public class GameLogic : MonoBehaviour
         currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
         currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
         turnCount++;
+        // ★ 턴·차례 로그 출력
+        Debug.Log($"[TURN] {turnCount}턴 / 현재 차례: {currentTurn}, 플레이어: {currentPlayer}");
 
         OnTurnChanged?.Invoke(currentPlayer);
 
