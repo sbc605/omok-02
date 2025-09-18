@@ -7,10 +7,11 @@ public class Omok : MonoBehaviour
 {
     [SerializeField] private Sprite whiteSprite;
     [SerializeField] private Sprite blackSprite;
+    [SerializeField] private Sprite forbiddenSprite; // X마크 스프라이트 할당 - 이재현
     [SerializeField] private Sprite previewSprite;
     [SerializeField] private SpriteRenderer markerSR;
 
-    public enum MarkerType { None, White, Black, Preview }
+    public enum MarkerType { None, White, Black, Preview, Forbidden } // Forbidden(x마크)추가 - 이재현
     private MarkerType currentMarker = MarkerType.None;
 
     private int row, col;
@@ -53,6 +54,10 @@ public class Omok : MonoBehaviour
                 markerSR.sprite = blackSprite;
                 markerSR.color = Color.white; // 투명도 초기화
                 DropAnimation();
+                break;
+            case MarkerType.Forbidden: // 금수 case 추가 - 이재현
+                markerSR.sprite = forbiddenSprite;
+                markerSR.color = Color.white;
                 break;
             case MarkerType.Preview:
                 markerSR.sprite = previewSprite;
