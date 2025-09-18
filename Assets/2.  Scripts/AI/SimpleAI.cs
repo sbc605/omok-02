@@ -1,41 +1,27 @@
 using UnityEngine;
 
-public class SimpleAI : MonoBehaviour{
-
+public class SimpleAI : MonoBehaviour
+{
     public enum Difficulty { Easy, Normal, Hard }
     public Difficulty difficulty = Difficulty.Easy;
 
     public Vector2Int lastMove = new Vector2Int(-1, -1);
-  
+
     public Vector2Int GetNextMove(GameLogic.StoneType[,] board)
     {
         switch (difficulty)
         {
             case Difficulty.Easy:
-                return GetRandomMove(board);
+                return GetNearbyMove(board); // 초보자 AI
             case Difficulty.Normal:
-                return GetNearbyMove(board);
+                return GetBestMove(board, useBothSides: false); // 점수 기반 단방향
             case Difficulty.Hard:
-                return GetBestMove(board);
+                return GetBestMove(board, useBothSides: true);  // 점수 기반 양방향
             default:
-                return GetRandomMove(board);
+                return GetNearbyMove(board);
         }
     }
 
-    // Easy : ���� ����
-    private Vector2Int GetRandomMove(GameLogic.StoneType[,] board)
-    {
-        int size = board.GetLength(0);
-        while (true)
-        {
-            int row = Random.Range(0, size);
-            int col = Random.Range(0, size);
-            if (board[row, col] == GameLogic.StoneType.None)
-                return new Vector2Int(row, col);
-        }
-    }
-
-    // Normal : ������ ���� �ֺ����� ����
     private Vector2Int GetNearbyMove(GameLogic.StoneType[,] board)
     {
         int size = board.GetLength(0);
@@ -56,8 +42,7 @@ public class SimpleAI : MonoBehaviour{
         return GetRandomMove(board);
     }
 
-    // Hard : ���� ���
-    private Vector2Int GetBestMove(GameLogic.StoneType[,] board)
+    private Vector2Int GetBestMove(GameLogic.StoneType[,] board, bool useBothSides)
     {
         int size = board.GetLength(0);
         Vector2Int bestMove = new Vector2Int(-1, -1);
@@ -69,7 +54,7 @@ public class SimpleAI : MonoBehaviour{
             {
                 if (board[r, c] != GameLogic.StoneType.None) continue;
 
-                int score = EvaluatePosition(board, r, c);
+                int score = EvaluatePosition(board, r, c, useBothSides);
                 if (score > bestScore)
                 {
                     bestScore = score;
@@ -80,7 +65,7 @@ public class SimpleAI : MonoBehaviour{
         return bestMove.x >= 0 ? bestMove : GetRandomMove(board);
     }
 
-    private int EvaluatePosition(GameLogic.StoneType[,] board, int row, int col)
+    private int EvaluatePosition(GameLogic.StoneType[,] board, int row, int col, bool useBothSides)
     {
         int score = 0;
         Vector2Int[] dirs = {
@@ -90,24 +75,23 @@ public class SimpleAI : MonoBehaviour{
 
         foreach (var d in dirs)
         {
-            int myCount = CountConsecutive(board, row, col, d, GameLogic.StoneType.White);
-            int oppCount = CountConsecutive(board, row, col, d, GameLogic.StoneType.Black);
+            int myCount = CountConsecutive(board, row, col, d, GameLogic.StoneType.White, useBothSides);
+            int oppCount = CountConsecutive(board, row, col, d, GameLogic.StoneType.Black, useBothSides);
 
             score += myCount * 10;
-            score += oppCount * 15; // ���� �� �� �߿��
+            score += oppCount * 15;
         }
 
         return score;
     }
 
-    private int CountConsecutive(GameLogic.StoneType[,] board, int row, int col, Vector2Int dir, GameLogic.StoneType type)
+    private int CountConsecutive(GameLogic.StoneType[,] board, int row, int col, Vector2Int dir, GameLogic.StoneType type, bool useBothSides)
     {
         int size = board.GetLength(0);
         int count = 0;
 
         int r = row + dir.x;
         int c = col + dir.y;
-
         while (r >= 0 && r < size && c >= 0 && c < size && board[r, c] == type)
         {
             count++;
@@ -115,6 +99,31 @@ public class SimpleAI : MonoBehaviour{
             c += dir.y;
         }
 
+        if (useBothSides)
+        {
+            r = row - dir.x;
+            c = col - dir.y;
+            while (r >= 0 && r < size && c >= 0 && c < size && board[r, c] == type)
+            {
+                count++;
+                r -= dir.x;
+                c -= dir.y;
+            }
+        }
+
         return count;
     }
+
+    private Vector2Int GetRandomMove(GameLogic.StoneType[,] board)
+    {
+        int size = board.GetLength(0);
+        while (true)
+        {
+            int row = Random.Range(0, size);
+            int col = Random.Range(0, size);
+            if (board[row, col] == GameLogic.StoneType.None)
+                return new Vector2Int(row, col);
+        }
+    }
 }
+
