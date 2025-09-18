@@ -12,6 +12,7 @@ public class GameLogic : MonoBehaviour
 
     public enum StoneType { None, Black, White }
     private StoneType currentTurn = StoneType.Black; // 흑 선공
+    public event Action<int, int, StoneType> OnStonePlaced; // 돌 놓일 때 호출 // 추가(수아)
 
     public enum PlayerType { player, CPU }; //플레이어 or AI
     public PlayerType currentPlayer;
@@ -29,7 +30,7 @@ public class GameLogic : MonoBehaviour
 
         int centerRow = boardSize / 2;
         int centerCol = boardSize / 2;
-        board[centerRow, centerCol] = StoneType.Black;
+        PlaceStone(centerRow, centerCol);
 
         // 턴 변경
         currentTurn = StoneType.White;
@@ -53,6 +54,7 @@ public class GameLogic : MonoBehaviour
         }
 
         board[row, col] = currentTurn;
+        OnStonePlaced?.Invoke(row, col, currentTurn); // 추가(수아)
 
         if (CheckWin(row, col))
         {

@@ -11,18 +11,20 @@ public class OmokController : MonoBehaviour
     private Omok[,] board; // 오목판 상태 저장 
     private int? selectedRow = null;
     private int? selectedCol = null;
-    
+
     private void OnDisable() // 턴마다 갱신 - 이재현
     {
         gameLogic.OnTurnChanged -= UpdateForbiddenMarkers;
+        gameLogic.OnStonePlaced -= HandleStonePlaced;
     }
-    
+
     private void Start()
     {
         int boardSize = gameLogic.boardSize; // 게임로직에서 보드 크기 가져오기
         board = new Omok[boardSize, boardSize];
-        
+
         gameLogic.OnTurnChanged += UpdateForbiddenMarkers; // 턴마다 갱신 - 이재현
+        gameLogic.OnStonePlaced += HandleStonePlaced;
 
         // 전체 크기
         float totalSize = (boardSize - 1) * cellSize;
@@ -51,7 +53,14 @@ public class OmokController : MonoBehaviour
         board[centerRow, centerCol].SetMarker(Omok.MarkerType.Black);
     }
 
-    // 좌표 클릭시 UI 표시
+    // 게임로직 결과 UI 반영
+    private void HandleStonePlaced(int row, int col, GameLogic.StoneType stone)
+    {
+        var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
+        board[row, col].SetMarker(markerType);
+    }
+
+    // 플레이어 입력 UI 반영
     public void OnCellClicked(int row, int col)
     {
         // 내 턴이 아닌 경우 무시
@@ -106,6 +115,10 @@ public class OmokController : MonoBehaviour
             var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
             board[row, col].SetMarker(markerType);
+        }
+        else
+        {
+            Debug.Log("착수에 실패했습니다.");
         }
 
         // 자리 비움

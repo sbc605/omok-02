@@ -30,7 +30,7 @@ public class GameManager : Singleton<GameManager>
     public List<SceneMusic> sceneMusicList;
 
     #region Unity Lifecycle Methods
-    
+
     protected override void Awake()
     {
         base.Awake(); // 부모 클래스의 Awake() 실행 (싱글톤 설정)
@@ -38,6 +38,7 @@ public class GameManager : Singleton<GameManager>
         bgmPlayer.loop = true;
     }
 
+    /* 주석처리함(수아)
     private void Start()
     {
         // gameLogic이 연결되었는지 확인
@@ -46,10 +47,12 @@ public class GameManager : Singleton<GameManager>
             // 1. 턴 변경 이벤트를 구독하여 AI 턴 감지
             gameLogic.OnTurnChanged += HandleTurnChange;
 
+            gameLogic.OnStonePlaced += HandleStonePlaced;
+
             // 2. 현재 보드 상태를 복사하여 초기화 (최초 감시 시작)
             InitializeBoardCopy();
         }
-    }
+    } */
 
     private void OnDestroy()
     {
@@ -57,6 +60,7 @@ public class GameManager : Singleton<GameManager>
         if (gameLogic != null)
         {
             gameLogic.OnTurnChanged -= HandleTurnChange;
+            // gameLogic.OnStonePlaced -= HandleStonePlaced;
         }
     }
 
@@ -64,7 +68,7 @@ public class GameManager : Singleton<GameManager>
     {
         // 게임 로직이 없으면 아무것도 안 함
         if (gameLogic == null) return;
-        
+
         // 플레이어 턴일 때만 보드 변화를 감시
         if (gameLogic.GetCurrentTurn() == GameLogic.StoneType.Black)
         {
@@ -94,7 +98,7 @@ public class GameManager : Singleton<GameManager>
                     if (newStone == GameLogic.StoneType.Black)
                     {
                         Debug.Log($"플레이어의 수를 감지했습니다: ({r}, {c})");
-                        
+
                         // AI의 lastMove를 업데이트
                         simpleAI.lastMove = new Vector2Int(r, c);
 
@@ -116,7 +120,7 @@ public class GameManager : Singleton<GameManager>
             isAITurnProcessing = true;
             StartCoroutine(ProcessAITurn());
         }
-        else if(currentPlayer == GameLogic.PlayerType.player)
+        else if (currentPlayer == GameLogic.PlayerType.player)
         {
             isAITurnProcessing = false;
         }
@@ -135,10 +139,12 @@ public class GameManager : Singleton<GameManager>
 
             // AI가 계산한 위치에 착수
             gameLogic.PlaceStone(aiMove.x, aiMove.y);
-            
+
             // AI가 둔 수까지 내 복사본에 업데이트
             UpdateBoardCopy();
         }
+
+        isAITurnProcessing = false;
     }
 
     #endregion
@@ -210,26 +216,35 @@ public class GameManager : Singleton<GameManager>
     }
 
     // 코루틴 셋업 게임 씬
-
     private IEnumerator SetupGameScene()
-{
-    // 한 프레임 대기 찾지 못하는거 방지용 
-    yield return new WaitForEndOfFrame();
+    {
+        // 한 프레임 대기 찾지 못하는거 방지용 
+        yield return new WaitForEndOfFrame();
 
+        gameLogic = FindFirstObjectByType<GameLogic>();
+        simpleAI = FindFirstObjectByType<SimpleAI>();
 
-    gameLogic = FindFirstObjectByType<GameLogic>();
-    simpleAI = FindFirstObjectByType<SimpleAI>();
-    
-    //정상적으로 찾았는지 확인용 추후 주석
-    Debug.Log(gameLogic != null ? "게임로직 오브젝트 찾음" : "실패함");
+        //정상적으로 찾았는지 확인용 추후 주석
+        Debug.Log(gameLogic != null ? "게임로직 오브젝트 찾음" : "실패함");
 
-    // 못 찾았을 경우, 로그 출력
+        // 못 찾았을 경우, 로그 출력
         if (gameLogic == null) Debug.LogError("Game 씬에서 GameLogic 오브젝트를 찾을 수 없습니다!");
-    if (simpleAI == null) Debug.LogError("Game 씬에서 SimpleAI 오브젝트를 찾을 수 없습니다!");
-    
-    // 보드 복사본도 여기서 초기화해줍니다.
-    InitializeBoardCopy();
-}
+        if (simpleAI == null) Debug.LogError("Game 씬에서 SimpleAI 오브젝트를 찾을 수 없습니다!");
+
+        // 추가(수아)
+        gameLogic.OnTurnChanged -= HandleTurnChange;
+        gameLogic.OnTurnChanged += HandleTurnChange;
+
+        // 보드 복사본도 여기서 초기화해줍니다.
+        InitializeBoardCopy();
+
+        // 씬 시작 직후 AI 차례라면 바로 실행(수아)
+        if (gameLogic.currentPlayer == GameLogic.PlayerType.CPU && !isAITurnProcessing)
+        {
+            isAITurnProcessing = true;
+            StartCoroutine(ProcessAITurn());
+        }
+    }
 
     public void LoadMainScene() => SceneManager.LoadScene("Main");
     public void LoadGameScene() => SceneManager.LoadScene("Game");
