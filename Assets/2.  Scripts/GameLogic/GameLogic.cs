@@ -1,26 +1,27 @@
 using UnityEngine;
 using System;
+using System.Collections.Generic;
 
 public class GameLogic : MonoBehaviour
 {
     // ★ 현재 턴 수 (1턴 = 흑 첫 수부터 시작)
     public int turnCount = 1;
-    
+
     public int boardSize = 15; // 몇 줄짜리 보드인지 (15x15나 19x19)
-    // 현재 돌 배치 상태
     private StoneType[,] board;   // StoneType.None / Black / White
 
-    // 바둑돌 관련
     public enum StoneType { None, Black, White }
     private StoneType currentTurn = StoneType.Black; // 흑 선공
 
     public enum PlayerType { player, CPU }; //플레이어 or AI
     public PlayerType currentPlayer;
-    public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출(GameLogic에서만 사용해서 event)
+    public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출
+    // ★ 금수 좌표 전체를 알리는 이벤트
+    public event Action<List<(int r,int c)>> OnForbiddenPositionsChanged;
 
     public enum GameResult { None, Win, Lose, Draw }
 
-    void Start() //보드 배열 초기화 및 흑돌 중앙 착수 시작
+    void Start()
     {
         board = new StoneType[boardSize, boardSize];
         currentTurn = StoneType.Black;
@@ -28,7 +29,7 @@ public class GameLogic : MonoBehaviour
 
         int centerRow = boardSize / 2;
         int centerCol = boardSize / 2;
-        board[centerRow, centerCol] = StoneType.Black; // PlaceStone 직접 호출보다 board 상태만 변경
+        board[centerRow, centerCol] = StoneType.Black;
 
         // 턴 변경
         currentTurn = StoneType.White;
@@ -36,7 +37,6 @@ public class GameLogic : MonoBehaviour
         OnTurnChanged?.Invoke(currentPlayer);
     }
 
-    /// <summary>착수</summary>
     public bool PlaceStone(int row, int col)
     {
         // 범위 / 중복 체크
@@ -46,60 +46,67 @@ public class GameLogic : MonoBehaviour
         // 금수 검사 : 흑만 적용
         if (currentTurn == StoneType.Black && IsForbiddenMove(row, col))
         {
-            // 금수일 경우 x표시 UI출력 코드 필요합니다.
             Debug.Log("금수 위치입니다.");
+            // ★ 금수 좌표 갱신(모든 금수 위치를 계산해 이벤트로 알림)
+            OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
             return false;
         }
 
-        // 착수
         board[row, col] = currentTurn;
 
-        // 승리 -> 게임 종료
         if (CheckWin(row, col))
         {
             EndGame(GameResult.Win);
             return true;
         }
 
-        // 무승부 -> 게임 종료
         if (IsBoardFull())
         {
             EndGame(GameResult.Draw);
             return true;
         }
-        
 
         // 턴 전환
         currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
         currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
-
-        // ★ 턴 수 증가
         turnCount++;
 
         OnTurnChanged?.Invoke(currentPlayer);
+
+        // ★ 흑 차례가 되면 그 시점의 금수 좌표 전체를 다시 알림
+        if (currentTurn == StoneType.Black)
+            OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
 
         return true;
     }
 
     // board, currentTurn 접근용
-    public StoneType GetStone(int row, int col) => board[row, col]; // 특정 위치의 돌 상태 반환
-    public StoneType GetCurrentTurn() => currentTurn; // 현재 턴 반환
-    
+    public StoneType GetStone(int row, int col) => board[row, col];
+    public StoneType GetCurrentTurn() => currentTurn;
+
     // ───────── 금수 판정 ─────────
     private bool IsForbiddenMove(int row, int col)
     {
-        // 착수 시뮬레이션
         board[row, col] = StoneType.Black;
 
         bool overline     = CreatesOverline(row, col);
         int openThreeCnt  = CountOpenThree(row, col);
         int openFourCnt   = CountOpenFour (row, col);
 
-
-        board[row, col] = StoneType.None; // 복구
-
-        // 장목 or 삼삼(열린3 ≥2) or 사사(열린4 ≥2)
+        board[row, col] = StoneType.None;
         return overline || openThreeCnt >= 2 || openFourCnt >= 2;
+    }
+
+    // ★ 현재 보드에서 흑 금수 좌표 전체 반환
+    public List<(int r,int c)> GetAllForbiddenPositions()
+    {
+        var list = new List<(int,int)>();
+        if (currentTurn != StoneType.Black) return list; // 흑 차례일 때만 계산
+        for (int r = 0; r < boardSize; r++)
+            for (int c = 0; c < boardSize; c++)
+                if (board[r,c] == StoneType.None && IsForbiddenMove(r,c))
+                    list.Add((r,c));
+        return list;
     }
 
     private bool CreatesOverline(int r, int c)

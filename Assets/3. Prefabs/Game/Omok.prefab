@@ -149,5 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteSprite: {fileID: 9185100545972174240, guid: 166c5e47fbd192048b53eeadcad4fa20, type: 3}
   blackSprite: {fileID: -824027187401283259, guid: e3dae48ea53a80545b906369c765234a, type: 3}
+  forbiddenSprite: {fileID: 6383278143045528611, guid: 7dd53a48bbc8f51499746fed3d7df995, type: 3}
   previewSprite: {fileID: 21300000, guid: 785b79b96288a7e4b9b836f1445b9fd3, type: 3}
   markerSR: {fileID: 5659002316563264892}

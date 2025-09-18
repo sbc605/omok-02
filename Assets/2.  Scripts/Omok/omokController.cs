@@ -11,11 +11,18 @@ public class OmokController : MonoBehaviour
     private Omok[,] board; // 오목판 상태 저장 
     private int? selectedRow = null;
     private int? selectedCol = null;
-
+    
+    private void OnDisable() // 턴마다 갱신 - 이재현
+    {
+        gameLogic.OnTurnChanged -= UpdateForbiddenMarkers;
+    }
+    
     private void Start()
     {
         int boardSize = gameLogic.boardSize; // 게임로직에서 보드 크기 가져오기
         board = new Omok[boardSize, boardSize];
+        
+        gameLogic.OnTurnChanged += UpdateForbiddenMarkers; // 턴마다 갱신 - 이재현
 
         // 전체 크기
         float totalSize = (boardSize - 1) * cellSize;
@@ -104,5 +111,27 @@ public class OmokController : MonoBehaviour
         // 자리 비움
         selectedRow = null;
         selectedCol = null;
+    }
+    private void UpdateForbiddenMarkers(GameLogic.PlayerType currentPlayer) // 금수마크출력 - 이재현
+    {
+        // 모든 비어 있는 칸을 None으로 초기화
+        for (int r = 0; r < board.GetLength(0); r++)
+        {
+            for (int c = 0; c < board.GetLength(1); c++)
+            {
+                if (gameLogic.GetStone(r, c) == GameLogic.StoneType.None)
+                    board[r, c].SetMarker(Omok.MarkerType.None);
+            }
+        }
+
+        // 흑 차례일 때만 금수 위치를 표시
+        if (gameLogic.GetCurrentTurn() == GameLogic.StoneType.Black)
+        {
+            var forbiddenList = gameLogic.GetAllForbiddenPositions();
+            foreach (var (r, c) in forbiddenList)
+            {
+                board[r, c].SetMarker(Omok.MarkerType.Forbidden);
+            }
+        }
     }
 }
