@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class Omok : MonoBehaviour
@@ -34,6 +35,10 @@ public class Omok : MonoBehaviour
     {
         currentMarker = marker;
 
+        // 기존 Tween 제거
+        markerSR.DOKill();
+        transform.DOKill();
+
         switch (marker)
         {
             case MarkerType.None:
@@ -41,12 +46,18 @@ public class Omok : MonoBehaviour
                 break;
             case MarkerType.White:
                 markerSR.sprite = whiteSprite;
+                markerSR.color = Color.white; // 투명도 초기화
+                DropAnimation();
                 break;
             case MarkerType.Black:
                 markerSR.sprite = blackSprite;
+                markerSR.color = Color.white; // 투명도 초기화
+                DropAnimation();
                 break;
             case MarkerType.Preview:
                 markerSR.sprite = previewSprite;
+                markerSR.color = Color.white; // 투명도 초기화
+                SelectCursorAnim();
                 break;
 
         }
@@ -62,5 +73,36 @@ public class Omok : MonoBehaviour
             return;
 
         omokController.OnCellClicked(row, col);
+    }
+
+    // 착수 애니메이션
+    private void DropAnimation()
+    {
+        // 시작 상태
+        transform.localScale = Vector3.zero;
+        transform.rotation = Quaternion.identity;
+
+        Sequence seq = DOTween.Sequence(); // Sequence: Tweener 여러개 제어
+
+        // 커짐
+        seq.Append(transform.DOScale(Vector3.one * 1f, 0.8f).SetEase(Ease.OutBack));
+        
+        // 크기 원래대로 돌아옴
+        seq.Append(transform.DOScale(Vector3.one * 0.5f, 0.9f).SetEase(Ease.OutBounce));
+
+        // 전체 시간동안 5번 회전
+        transform.DORotate(new Vector3(0, 1800, 1800), 1.7f, RotateMode.FastBeyond360).SetEase(Ease.OutQuint);
+    }
+
+    // 임시 선택 애니메이션
+    private void SelectCursorAnim()
+    {       
+        if (markerSR.sprite == previewSprite)
+        {
+            markerSR.DOFade(0.3f, 0.3f).SetLoops(-1, LoopType.Yoyo);
+
+            transform.localScale = Vector3.one * 0.5f;
+            transform.DOScale(Vector3.one * 0.6f, 0.3f).SetLoops(-1, LoopType.Yoyo);
+        }       
     }
 }
