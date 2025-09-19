@@ -9,6 +9,10 @@ public class OmokController : MonoBehaviour
     [SerializeField] private float cellSize = 0.32f; // 셀 간격
     private Vector2 boardOrigin = new Vector2(0, -0.24f); // 보드 시작 위치(중심)
 
+    private AudioSource omokEffectPlayer;
+    [SerializeField] private AudioClip blackSound;
+    [SerializeField] private AudioClip whiteSound;
+
     private Omok[,] board; // 오목판 상태 저장 
     private int? selectedRow = null;
     private int? selectedCol = null;
@@ -21,6 +25,8 @@ public class OmokController : MonoBehaviour
 
     private void Start()
     {
+        omokEffectPlayer = GetComponent<AudioSource>();
+
         int boardSize = gameLogic.boardSize; // 게임로직에서 보드 크기 가져오기
         board = new Omok[boardSize, boardSize];
 
@@ -66,9 +72,15 @@ public class OmokController : MonoBehaviour
             board[row, col].SetMarker(Omok.MarkerType.None);
             return;
         }
-        
+
         var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
         board[row, col].SetMarker(markerType);
+
+        // 착수 효과음 재생
+        if (stone == GameLogic.StoneType.Black)
+            omokEffectPlayer.PlayOneShot(blackSound);
+        else if (stone == GameLogic.StoneType.White)
+            omokEffectPlayer.PlayOneShot(whiteSound);
     }
 
     // 플레이어 입력 UI 반영
@@ -135,6 +147,12 @@ public class OmokController : MonoBehaviour
             var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
             board[row, col].SetMarker(markerType);
+
+            // 착수 효과음 재생
+            if (stone == GameLogic.StoneType.Black)
+                omokEffectPlayer.PlayOneShot(blackSound);
+            else if (stone == GameLogic.StoneType.White)
+                omokEffectPlayer.PlayOneShot(whiteSound);
         }
         else
         {
