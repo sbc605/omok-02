@@ -26,7 +26,6 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
     // SingleTon void Awake modify -> protected virtual void Awake() .. Reason : intterupt at GameManager.cs 
     protected virtual void Awake()
     {
-
         if (instance == null)
         {
             instance = this as T;
