@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager>
     // --- 외부 스크립트 연결 ---
     private GameLogic gameLogic;
     private SimpleAI simpleAI;
+    private ClickFXController clickEffect;
     // BlockController는 GameManager가 직접 입력을 처리하지 않게 변경
     // public BlockController blockController; 
 
@@ -31,6 +32,11 @@ public class GameManager : Singleton<GameManager>
 
     #region Unity Lifecycle Methods
 
+    void Start()
+    {
+        clickEffect = FindFirstObjectByType<ClickFXController>();
+    }
+
     protected override void Awake()
     {
         base.Awake(); // 부모 클래스의 Awake() 실행 (싱글톤 설정)
@@ -38,29 +44,12 @@ public class GameManager : Singleton<GameManager>
         bgmPlayer.loop = true;
     }
 
-    /* 주석처리함(수아)
-    private void Start()
-    {
-        // gameLogic이 연결되었는지 확인
-        if (gameLogic != null)
-        {
-            // 1. 턴 변경 이벤트를 구독하여 AI 턴 감지
-            gameLogic.OnTurnChanged += HandleTurnChange;
-
-            gameLogic.OnStonePlaced += HandleStonePlaced;
-
-            // 2. 현재 보드 상태를 복사하여 초기화 (최초 감시 시작)
-            InitializeBoardCopy();
-        }
-    } */
-
     private void OnDestroy()
     {
         // 씬 전환 또는 오브젝트 파괴 시 이벤트 구독 해제
         if (gameLogic != null)
         {
             gameLogic.OnTurnChanged -= HandleTurnChange;
-            // gameLogic.OnStonePlaced -= HandleStonePlaced;
         }
     }
 
@@ -223,6 +212,15 @@ public class GameManager : Singleton<GameManager>
 
         gameLogic = FindFirstObjectByType<GameLogic>();
         simpleAI = FindFirstObjectByType<SimpleAI>();
+
+        // 게임씬 전환될 때 이름으로 한번만 찾음
+        var board = GameObject.Find("Board").GetComponent<SpriteRenderer>();
+        var resultPanel = GameObject.Find("Result Panel").transform;
+
+        if (clickEffect != null)
+        {
+            clickEffect.SetGameSceneSprite(board, resultPanel);
+        }
 
         //정상적으로 찾았는지 확인용 추후 주석
         Debug.Log(gameLogic != null ? "게임로직 오브젝트 찾음" : "실패함");

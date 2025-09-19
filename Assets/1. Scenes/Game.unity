@@ -1401,41 +1401,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &853279016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 853279017}
-  m_Layer: 5
-  m_Name: Click Effect Group
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &853279017
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853279016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2010264738}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &878905653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,7 +1412,7 @@ GameObject:
   - component: {fileID: 878905655}
   - component: {fileID: 878905654}
   m_Layer: 0
-  m_Name: omok-board_15x15_0
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4299,7 +4264,6 @@ RectTransform:
   - {fileID: 519467171}
   - {fileID: 1270884890}
   - {fileID: 1448129708}
-  - {fileID: 853279017}
   - {fileID: 1208138939}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4641,23 +4605,6 @@ MonoBehaviour:
   omokPrefab: {fileID: 3409118808372465647, guid: c89915196d077b646aee71e5e97f04ec, type: 3}
   gameLogic: {fileID: 300040824}
   cellSize: 0.32
---- !u!1 &1189106615247377337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4799161432109293169}
-  - component: {fileID: 8339889642857401251}
-  m_Layer: 0
-  m_Name: Click FX Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &2329552005787271224
 Transform:
   m_ObjectHideFlags: 0
@@ -4670,21 +4617,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4799161432109293169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189106615247377337}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4704,28 +4636,6 @@ MonoBehaviour:
   playerType: 0
   Notyourturn: {fileID: 813757742}
   Notmyturn: {fileID: 2024419259}
---- !u!114 &8339889642857401251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189106615247377337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6c06a627f7fa847acc8f26121c42b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 287981205394976786, guid: a11f20bfe949ee347a9770c1472d2c78, type: 3}
-  canvas: {fileID: 2010264737}
-  frames:
-  - {fileID: 21300000, guid: 870e66a1f0079bd4984bb44a6cffcc32, type: 3}
-  - {fileID: 21300000, guid: 98c7fb97565892940b10a56223c64817, type: 3}
-  - {fileID: 21300000, guid: a2cf0aec12b1a4b46b1be955afb92eef, type: 3}
-  - {fileID: 21300000, guid: b5facf8c916f98b4bb56dc1e97a56a28, type: 3}
-  - {fileID: 21300000, guid: 441c96bfe18bb9747bbab995bed0cd49, type: 3}
-  board: {fileID: 878905654}
-  resultPanel: {fileID: 1448129708}
 --- !u!224 &8970660996803816000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4756,5 +4666,4 @@ SceneRoots:
   - {fileID: 300040823}
   - {fileID: 1024042976}
   - {fileID: 2329552005787271224}
-  - {fileID: 4799161432109293169}
   - {fileID: 8970660996803816000}
