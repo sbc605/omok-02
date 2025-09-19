@@ -1,0 +1,6805 @@
+fileFormatVersion: 2
+guid: 4f038523b83634e48a6d9132b42aab63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3228464359934722424
+    second: CircleSplosionV2_100x100px_0
+  - first:
+      213: 3138197792563376702
+    second: CircleSplosionV2_100x100px_1
+  - first:
+      213: -5777898192077681882
+    second: CircleSplosionV2_100x100px_2
+  - first:
+      213: -6295096388033509887
+    second: CircleSplosionV2_100x100px_3
+  - first:
+      213: -5325582754044778134
+    second: CircleSplosionV2_100x100px_4
+  - first:
+      213: -3063135492089549553
+    second: CircleSplosionV2_100x100px_5
+  - first:
+      213: -2007655867671813088
+    second: CircleSplosionV2_100x100px_6
+  - first:
+      213: -4867404373250963790
+    second: CircleSplosionV2_100x100px_7
+  - first:
+      213: 625020571334530244
+    second: CircleSplosionV2_100x100px_8
+  - first:
+      213: -7051955207673798655
+    second: CircleSplosionV2_100x100px_9
+  - first:
+      213: 431472443439687867
+    second: CircleSplosionV2_100x100px_10
+  - first:
+      213: 6835860173919454888
+    second: CircleSplosionV2_100x100px_11
+  - first:
+      213: -5601278991033420009
+    second: CircleSplosionV2_100x100px_12
+  - first:
+      213: 2089778539128620062
+    second: CircleSplosionV2_100x100px_13
+  - first:
+      213: 432088382899911385
+    second: CircleSplosionV2_100x100px_14
+  - first:
+      213: 2933912350652580428
+    second: CircleSplosionV2_100x100px_15
+  - first:
+      213: 7821297071724705013
+    second: CircleSplosionV2_100x100px_16
+  - first:
+      213: 8785630534483426238
+    second: CircleSplosionV2_100x100px_17
+  - first:
+      213: 2170541847376692305
+    second: CircleSplosionV2_100x100px_18
+  - first:
+      213: 1196739272667905368
+    second: CircleSplosionV2_100x100px_19
+  - first:
+      213: -4283990287542518562
+    second: CircleSplosionV2_100x100px_20
+  - first:
+      213: 214901259176055601
+    second: CircleSplosionV2_100x100px_21
+  - first:
+      213: 3807660668374395749
+    second: CircleSplosionV2_100x100px_22
+  - first:
+      213: -5147379294120552701
+    second: CircleSplosionV2_100x100px_23
+  - first:
+      213: 6595845751604277339
+    second: CircleSplosionV2_100x100px_24
+  - first:
+      213: -5883815522697710318
+    second: CircleSplosionV2_100x100px_25
+  - first:
+      213: 6869774026255929177
+    second: CircleSplosionV2_100x100px_26
+  - first:
+      213: 6089131507310332108
+    second: CircleSplosionV2_100x100px_27
+  - first:
+      213: 2123146285132931107
+    second: CircleSplosionV2_100x100px_28
+  - first:
+      213: -6073094821918962220
+    second: CircleSplosionV2_100x100px_29
+  - first:
+      213: -4081311945907385658
+    second: CircleSplosionV2_100x100px_30
+  - first:
+      213: -5667974967828407918
+    second: CircleSplosionV2_100x100px_31
+  - first:
+      213: -3123055027744119816
+    second: CircleSplosionV2_100x100px_32
+  - first:
+      213: 8690600135621977996
+    second: CircleSplosionV2_100x100px_33
+  - first:
+      213: -599671122213113377
+    second: CircleSplosionV2_100x100px_34
+  - first:
+      213: 3100597777729376218
+    second: CircleSplosionV2_100x100px_35
+  - first:
+      213: 4256140885709326893
+    second: CircleSplosionV2_100x100px_36
+  - first:
+      213: 3555780776278053826
+    second: CircleSplosionV2_100x100px_37
+  - first:
+      213: -422431977395376957
+    second: CircleSplosionV2_100x100px_38
+  - first:
+      213: 3314757874706997767
+    second: CircleSplosionV2_100x100px_39
+  - first:
+      213: 8501627361110505900
+    second: CircleSplosionV2_100x100px_40
+  - first:
+      213: -5350936292115996985
+    second: CircleSplosionV2_100x100px_41
+  - first:
+      213: -3972880875844897208
+    second: CircleSplosionV2_100x100px_42
+  - first:
+      213: -7323200615916615373
+    second: CircleSplosionV2_100x100px_43
+  - first:
+      213: 5975976485675213828
+    second: CircleSplosionV2_100x100px_44
+  - first:
+      213: 1781262837680093618
+    second: CircleSplosionV2_100x100px_45
+  - first:
+      213: -6744149342109118750
+    second: CircleSplosionV2_100x100px_46
+  - first:
+      213: 1078391797526373599
+    second: CircleSplosionV2_100x100px_47
+  - first:
+      213: 8660508009534079920
+    second: CircleSplosionV2_100x100px_48
+  - first:
+      213: -965028581698624589
+    second: CircleSplosionV2_100x100px_49
+  - first:
+      213: 7344002614496931073
+    second: CircleSplosionV2_100x100px_50
+  - first:
+      213: -2287529134529951057
+    second: CircleSplosionV2_100x100px_51
+  - first:
+      213: -1299783353723602783
+    second: CircleSplosionV2_100x100px_52
+  - first:
+      213: 6951809632938003076
+    second: CircleSplosionV2_100x100px_53
+  - first:
+      213: 9139213058599028732
+    second: CircleSplosionV2_100x100px_54
+  - first:
+      213: -5025402780720411559
+    second: CircleSplosionV2_100x100px_55
+  - first:
+      213: -4822639600081661293
+    second: CircleSplosionV2_100x100px_56
+  - first:
+      213: -1559253302221854757
+    second: CircleSplosionV2_100x100px_57
+  - first:
+      213: -1672203082071611456
+    second: CircleSplosionV2_100x100px_58
+  - first:
+      213: -373043689077449958
+    second: CircleSplosionV2_100x100px_59
+  - first:
+      213: 2908354122835985784
+    second: CircleSplosionV2_100x100px_60
+  - first:
+      213: -3271001323627655020
+    second: CircleSplosionV2_100x100px_61
+  - first:
+      213: -6007103761437171467
+    second: CircleSplosionV2_100x100px_62
+  - first:
+      213: -7042833233700791783
+    second: CircleSplosionV2_100x100px_63
+  - first:
+      213: 1342650131991093297
+    second: CircleSplosionV2_100x100px_64
+  - first:
+      213: 9079298179174472187
+    second: CircleSplosionV2_100x100px_65
+  - first:
+      213: 1651892119034129726
+    second: CircleSplosionV2_100x100px_66
+  - first:
+      213: -7954731465459454479
+    second: CircleSplosionV2_100x100px_67
+  - first:
+      213: -1270083109707732546
+    second: CircleSplosionV2_100x100px_68
+  - first:
+      213: 2235818444393540833
+    second: CircleSplosionV2_100x100px_69
+  - first:
+      213: -3541467495972993109
+    second: CircleSplosionV2_100x100px_70
+  - first:
+      213: -5182429125545296798
+    second: CircleSplosionV2_100x100px_71
+  - first:
+      213: 9080528728753325806
+    second: CircleSplosionV2_100x100px_72
+  - first:
+      213: 3817279173531742149
+    second: CircleSplosionV2_100x100px_73
+  - first:
+      213: 2341794618663222563
+    second: CircleSplosionV2_100x100px_74
+  - first:
+      213: -4763971931799685647
+    second: CircleSplosionV2_100x100px_75
+  - first:
+      213: 806985095182669304
+    second: CircleSplosionV2_100x100px_76
+  - first:
+      213: 7667110515879188274
+    second: CircleSplosionV2_100x100px_77
+  - first:
+      213: 5434970438104669003
+    second: CircleSplosionV2_100x100px_78
+  - first:
+      213: -4201953555396868267
+    second: CircleSplosionV2_100x100px_79
+  - first:
+      213: -6214120007715393836
+    second: CircleSplosionV2_100x100px_80
+  - first:
+      213: -8682596897243682269
+    second: CircleSplosionV2_100x100px_81
+  - first:
+      213: 5389111917144154391
+    second: CircleSplosionV2_100x100px_82
+  - first:
+      213: -23784273373396559
+    second: CircleSplosionV2_100x100px_83
+  - first:
+      213: 2819363578443000476
+    second: CircleSplosionV2_100x100px_84
+  - first:
+      213: -8474321505847022203
+    second: CircleSplosionV2_100x100px_85
+  - first:
+      213: 1833301615057740941
+    second: CircleSplosionV2_100x100px_86
+  - first:
+      213: -13533002804111472
+    second: CircleSplosionV2_100x100px_87
+  - first:
+      213: 7041753175524260051
+    second: CircleSplosionV2_100x100px_88
+  - first:
+      213: -1119235385040327535
+    second: CircleSplosionV2_100x100px_89
+  - first:
+      213: -1938917726274455460
+    second: CircleSplosionV2_100x100px_90
+  - first:
+      213: -747970074461789517
+    second: CircleSplosionV2_100x100px_91
+  - first:
+      213: 907292063396822630
+    second: CircleSplosionV2_100x100px_92
+  - first:
+      213: -4794016884859680005
+    second: CircleSplosionV2_100x100px_93
+  - first:
+      213: 7534530419178821600
+    second: CircleSplosionV2_100x100px_94
+  - first:
+      213: -7789316438294394362
+    second: CircleSplosionV2_100x100px_95
+  - first:
+      213: 7011726837666085796
+    second: CircleSplosionV2_100x100px_96
+  - first:
+      213: 3646940570337790717
+    second: CircleSplosionV2_100x100px_97
+  - first:
+      213: -7052166503900394052
+    second: CircleSplosionV2_100x100px_98
+  - first:
+      213: -2213711301466270053
+    second: CircleSplosionV2_100x100px_99
+  - first:
+      213: 9163097555552222252
+    second: CircleSplosionV2_100x100px_100
+  - first:
+      213: 7536559975629387256
+    second: CircleSplosionV2_100x100px_101
+  - first:
+      213: 3742243208617061686
+    second: CircleSplosionV2_100x100px_102
+  - first:
+      213: 6972915752423807529
+    second: CircleSplosionV2_100x100px_103
+  - first:
+      213: -4918797069090820539
+    second: CircleSplosionV2_100x100px_104
+  - first:
+      213: 4369738414129713940
+    second: CircleSplosionV2_100x100px_105
+  - first:
+      213: -8744228420299038478
+    second: CircleSplosionV2_100x100px_106
+  - first:
+      213: -6025890112681686659
+    second: CircleSplosionV2_100x100px_107
+  - first:
+      213: 8180485703473256200
+    second: CircleSplosionV2_100x100px_108
+  - first:
+      213: 2081677597773046907
+    second: CircleSplosionV2_100x100px_109
+  - first:
+      213: 5904055447932977188
+    second: CircleSplosionV2_100x100px_110
+  - first:
+      213: -3322530737614816028
+    second: CircleSplosionV2_100x100px_111
+  - first:
+      213: 6232571336584631665
+    second: CircleSplosionV2_100x100px_112
+  - first:
+      213: -5851554186739328825
+    second: CircleSplosionV2_100x100px_113
+  - first:
+      213: 7520961104308664851
+    second: CircleSplosionV2_100x100px_114
+  - first:
+      213: -6550464508246131993
+    second: CircleSplosionV2_100x100px_115
+  - first:
+      213: -6391204331766417519
+    second: CircleSplosionV2_100x100px_116
+  - first:
+      213: -479936691574418107
+    second: CircleSplosionV2_100x100px_117
+  - first:
+      213: 5404967052632882306
+    second: CircleSplosionV2_100x100px_118
+  - first:
+      213: 572239239457533848
+    second: CircleSplosionV2_100x100px_119
+  - first:
+      213: -7869227570372280965
+    second: CircleSplosionV2_100x100px_120
+  - first:
+      213: 1859488577674445281
+    second: CircleSplosionV2_100x100px_121
+  - first:
+      213: 4567835248181667060
+    second: CircleSplosionV2_100x100px_122
+  - first:
+      213: -8111169815032343435
+    second: CircleSplosionV2_100x100px_123
+  - first:
+      213: -2669656399040446064
+    second: CircleSplosionV2_100x100px_124
+  - first:
+      213: 5613296390924069716
+    second: CircleSplosionV2_100x100px_125
+  - first:
+      213: -6450226954263606733
+    second: CircleSplosionV2_100x100px_126
+  - first:
+      213: -2441331974279643420
+    second: CircleSplosionV2_100x100px_127
+  - first:
+      213: -6983040971669194736
+    second: CircleSplosionV2_100x100px_128
+  - first:
+      213: 671385520334322527
+    second: CircleSplosionV2_100x100px_129
+  - first:
+      213: -3792390178023414335
+    second: CircleSplosionV2_100x100px_130
+  - first:
+      213: 2124232352475697444
+    second: CircleSplosionV2_100x100px_131
+  - first:
+      213: -4371464476591370288
+    second: CircleSplosionV2_100x100px_132
+  - first:
+      213: -443224561766425128
+    second: CircleSplosionV2_100x100px_133
+  - first:
+      213: -8081552952799369187
+    second: CircleSplosionV2_100x100px_134
+  - first:
+      213: 7863766182424545595
+    second: CircleSplosionV2_100x100px_135
+  - first:
+      213: -3952951749767802772
+    second: CircleSplosionV2_100x100px_136
+  - first:
+      213: -1177313186894256865
+    second: CircleSplosionV2_100x100px_137
+  - first:
+      213: -5318282307209238722
+    second: CircleSplosionV2_100x100px_138
+  - first:
+      213: -8303022293441024582
+    second: CircleSplosionV2_100x100px_139
+  - first:
+      213: 9039487715650877231
+    second: CircleSplosionV2_100x100px_140
+  - first:
+      213: 3737903965641043525
+    second: CircleSplosionV2_100x100px_141
+  - first:
+      213: 1671279674511653443
+    second: CircleSplosionV2_100x100px_142
+  - first:
+      213: 8893939898298511425
+    second: CircleSplosionV2_100x100px_143
+  - first:
+      213: 4024104849964391364
+    second: CircleSplosionV2_100x100px_144
+  - first:
+      213: 4647203002390141204
+    second: CircleSplosionV2_100x100px_145
+  - first:
+      213: -1536351515302376395
+    second: CircleSplosionV2_100x100px_146
+  - first:
+      213: -6070025993115816795
+    second: CircleSplosionV2_100x100px_147
+  - first:
+      213: 7685842314055886531
+    second: CircleSplosionV2_100x100px_148
+  - first:
+      213: -5541069808828531221
+    second: CircleSplosionV2_100x100px_149
+  - first:
+      213: 4672099235563744911
+    second: CircleSplosionV2_100x100px_150
+  - first:
+      213: 8542544013218234807
+    second: CircleSplosionV2_100x100px_151
+  - first:
+      213: 2696582553219207565
+    second: CircleSplosionV2_100x100px_152
+  - first:
+      213: -4003264685875108409
+    second: CircleSplosionV2_100x100px_153
+  - first:
+      213: -3121693590814630653
+    second: CircleSplosionV2_100x100px_154
+  - first:
+      213: -3208735693243214635
+    second: CircleSplosionV2_100x100px_155
+  - first:
+      213: -4817078150245313073
+    second: CircleSplosionV2_100x100px_156
+  - first:
+      213: -995150060064110996
+    second: CircleSplosionV2_100x100px_157
+  - first:
+      213: 9010484486490103946
+    second: CircleSplosionV2_100x100px_158
+  - first:
+      213: -3756775041247280783
+    second: CircleSplosionV2_100x100px_159
+  - first:
+      213: -4777426165023017897
+    second: CircleSplosionV2_100x100px_160
+  - first:
+      213: 8036644992583628993
+    second: CircleSplosionV2_100x100px_161
+  - first:
+      213: 3629643771407880248
+    second: CircleSplosionV2_100x100px_162
+  - first:
+      213: -8065782779173697943
+    second: CircleSplosionV2_100x100px_163
+  - first:
+      213: 5094496768025876528
+    second: CircleSplosionV2_100x100px_164
+  - first:
+      213: 3297098875092790834
+    second: CircleSplosionV2_100x100px_165
+  - first:
+      213: -8789801013641121390
+    second: CircleSplosionV2_100x100px_166
+  - first:
+      213: -6302895917264970824
+    second: CircleSplosionV2_100x100px_167
+  - first:
+      213: -8807417036539540668
+    second: CircleSplosionV2_100x100px_168
+  - first:
+      213: -8191316605842061950
+    second: CircleSplosionV2_100x100px_169
+  - first:
+      213: 5909732704232043395
+    second: CircleSplosionV2_100x100px_170
+  - first:
+      213: -2882917363649705764
+    second: CircleSplosionV2_100x100px_171
+  - first:
+      213: -6418264441598238004
+    second: CircleSplosionV2_100x100px_172
+  - first:
+      213: -2771195851647070203
+    second: CircleSplosionV2_100x100px_173
+  - first:
+      213: 5730551787800843878
+    second: CircleSplosionV2_100x100px_174
+  - first:
+      213: -6692215356246890105
+    second: CircleSplosionV2_100x100px_175
+  - first:
+      213: 3572062073341145929
+    second: CircleSplosionV2_100x100px_176
+  - first:
+      213: 2555570070909754036
+    second: CircleSplosionV2_100x100px_177
+  - first:
+      213: -1121822622827825439
+    second: CircleSplosionV2_100x100px_178
+  - first:
+      213: -2115274955689591705
+    second: CircleSplosionV2_100x100px_179
+  - first:
+      213: 7131221819365179699
+    second: CircleSplosionV2_100x100px_180
+  - first:
+      213: -1808464903341308101
+    second: CircleSplosionV2_100x100px_181
+  - first:
+      213: 2341319910343264071
+    second: CircleSplosionV2_100x100px_182
+  - first:
+      213: 4416436308085454785
+    second: CircleSplosionV2_100x100px_183
+  - first:
+      213: -2835624350593760603
+    second: CircleSplosionV2_100x100px_184
+  - first:
+      213: 6506518177054376330
+    second: CircleSplosionV2_100x100px_185
+  - first:
+      213: -147866413924449979
+    second: CircleSplosionV2_100x100px_186
+  - first:
+      213: 1873809946490126065
+    second: CircleSplosionV2_100x100px_187
+  - first:
+      213: -6614142875119269881
+    second: CircleSplosionV2_100x100px_188
+  - first:
+      213: 1690864562144091892
+    second: CircleSplosionV2_100x100px_189
+  - first:
+      213: 8994057091841667845
+    second: CircleSplosionV2_100x100px_190
+  - first:
+      213: -2628202448993884803
+    second: CircleSplosionV2_100x100px_191
+  - first:
+      213: -8139768081260988774
+    second: CircleSplosionV2_100x100px_192
+  - first:
+      213: -2075253752266246472
+    second: CircleSplosionV2_100x100px_193
+  - first:
+      213: 2212280459905363198
+    second: CircleSplosionV2_100x100px_194
+  - first:
+      213: -3384608091960107024
+    second: CircleSplosionV2_100x100px_195
+  - first:
+      213: 1640449964915735517
+    second: CircleSplosionV2_100x100px_196
+  - first:
+      213: 9084867261238819102
+    second: CircleSplosionV2_100x100px_197
+  - first:
+      213: -6251453066758524944
+    second: CircleSplosionV2_100x100px_198
+  - first:
+      213: 1310058037717230790
+    second: CircleSplosionV2_100x100px_199
+  - first:
+      213: 678206930560611362
+    second: CircleSplosionV2_100x100px_200
+  - first:
+      213: -1276693786375029499
+    second: CircleSplosionV2_100x100px_201
+  - first:
+      213: 4099957799666665566
+    second: CircleSplosionV2_100x100px_202
+  - first:
+      213: -1467555945454562624
+    second: CircleSplosionV2_100x100px_203
+  - first:
+      213: -3541736632293059147
+    second: CircleSplosionV2_100x100px_204
+  - first:
+      213: -2476526942171161610
+    second: CircleSplosionV2_100x100px_205
+  - first:
+      213: 5726684320767234853
+    second: CircleSplosionV2_100x100px_206
+  - first:
+      213: 7203452498005443801
+    second: CircleSplosionV2_100x100px_207
+  - first:
+      213: -1939715185781341821
+    second: CircleSplosionV2_100x100px_208
+  - first:
+      213: -5989260195155521762
+    second: CircleSplosionV2_100x100px_209
+  - first:
+      213: -2849137342335429916
+    second: CircleSplosionV2_100x100px_210
+  - first:
+      213: 3405375189573746913
+    second: CircleSplosionV2_100x100px_211
+  - first:
+      213: 288371705510251040
+    second: CircleSplosionV2_100x100px_212
+  - first:
+      213: -6652156049577194581
+    second: CircleSplosionV2_100x100px_213
+  - first:
+      213: -6633106017093664857
+    second: CircleSplosionV2_100x100px_214
+  - first:
+      213: -8135637752833943598
+    second: CircleSplosionV2_100x100px_215
+  - first:
+      213: 8571536921830324283
+    second: CircleSplosionV2_100x100px_216
+  - first:
+      213: -4670531190839713808
+    second: CircleSplosionV2_100x100px_217
+  - first:
+      213: -2961551022659391633
+    second: CircleSplosionV2_100x100px_218
+  - first:
+      213: 531142103124607805
+    second: CircleSplosionV2_100x100px_219
+  - first:
+      213: -1363487410612316612
+    second: CircleSplosionV2_100x100px_220
+  - first:
+      213: 5665424221714318159
+    second: CircleSplosionV2_100x100px_221
+  - first:
+      213: 8771984209552604272
+    second: CircleSplosionV2_100x100px_222
+  - first:
+      213: 2659393380368472251
+    second: CircleSplosionV2_100x100px_223
+  - first:
+      213: -173692725286020802
+    second: CircleSplosionV2_100x100px_224
+  - first:
+      213: -4337618259817930426
+    second: CircleSplosionV2_100x100px_225
+  - first:
+      213: -2430125679024783765
+    second: CircleSplosionV2_100x100px_226
+  - first:
+      213: -8327637523273868749
+    second: CircleSplosionV2_100x100px_227
+  - first:
+      213: -6512699530747393548
+    second: CircleSplosionV2_100x100px_228
+  - first:
+      213: -4186655456309159654
+    second: CircleSplosionV2_100x100px_229
+  - first:
+      213: -7519666968395609243
+    second: CircleSplosionV2_100x100px_230
+  - first:
+      213: 877108234361102392
+    second: CircleSplosionV2_100x100px_231
+  - first:
+      213: 9003280914188546297
+    second: CircleSplosionV2_100x100px_232
+  - first:
+      213: -588355242549190848
+    second: CircleSplosionV2_100x100px_233
+  - first:
+      213: 4714562285512078446
+    second: CircleSplosionV2_100x100px_234
+  - first:
+      213: 6083668385294494453
+    second: CircleSplosionV2_100x100px_235
+  - first:
+      213: -7838304165353067233
+    second: CircleSplosionV2_100x100px_236
+  - first:
+      213: -232772001691115640
+    second: CircleSplosionV2_100x100px_237
+  - first:
+      213: -1580166607316671310
+    second: CircleSplosionV2_100x100px_238
+  - first:
+      213: -2906373736673367173
+    second: CircleSplosionV2_100x100px_239
+  - first:
+      213: -6603054708753913411
+    second: CircleSplosionV2_100x100px_240
+  - first:
+      213: -6552061746622375469
+    second: CircleSplosionV2_100x100px_241
+  - first:
+      213: 8020892125498884601
+    second: CircleSplosionV2_100x100px_242
+  - first:
+      213: 5101203418707949882
+    second: CircleSplosionV2_100x100px_243
+  - first:
+      213: 771417143234717563
+    second: CircleSplosionV2_100x100px_244
+  - first:
+      213: 9056147458769190878
+    second: CircleSplosionV2_100x100px_245
+  - first:
+      213: 6453613800168845668
+    second: CircleSplosionV2_100x100px_246
+  - first:
+      213: -6424607667481206386
+    second: CircleSplosionV2_100x100px_247
+  - first:
+      213: 7764472367921917524
+    second: CircleSplosionV2_100x100px_248
+  - first:
+      213: 4149141120399860914
+    second: CircleSplosionV2_100x100px_249
+  - first:
+      213: 7790977919752137126
+    second: CircleSplosionV2_100x100px_250
+  - first:
+      213: 2412699859335163524
+    second: CircleSplosionV2_100x100px_251
+  - first:
+      213: 3088841348786676438
+    second: CircleSplosionV2_100x100px_252
+  - first:
+      213: -970715993146881932
+    second: CircleSplosionV2_100x100px_253
+  - first:
+      213: -5467608878691422630
+    second: CircleSplosionV2_100x100px_254
+  - first:
+      213: 8802970466077137340
+    second: CircleSplosionV2_100x100px_255
+  - first:
+      213: -8714914146824500529
+    second: CircleSplosionV2_100x100px_256
+  - first:
+      213: -6883073085540002338
+    second: CircleSplosionV2_100x100px_257
+  - first:
+      213: 4324970955454324922
+    second: CircleSplosionV2_100x100px_258
+  - first:
+      213: -4431389072832741933
+    second: CircleSplosionV2_100x100px_259
+  - first:
+      213: -8614974223064093683
+    second: CircleSplosionV2_100x100px_260
+  - first:
+      213: -3504815547083986294
+    second: CircleSplosionV2_100x100px_261
+  - first:
+      213: 6595735672400138074
+    second: CircleSplosionV2_100x100px_262
+  - first:
+      213: -3678487174188675411
+    second: CircleSplosionV2_100x100px_263
+  - first:
+      213: -3801779772462927102
+    second: CircleSplosionV2_100x100px_264
+  - first:
+      213: -6051123571838332653
+    second: CircleSplosionV2_100x100px_265
+  - first:
+      213: 2661431018044156783
+    second: CircleSplosionV2_100x100px_266
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_0
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 702
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8710befea3fcdcc20800000000000000
+      internalID: 3228464359934722424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 602
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32b7a4f34e1d8b20800000000000000
+      internalID: 3138197792563376702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 602
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b86d8f438c0dfa0800000000000000
+      internalID: -5777898192077681882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 602
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1060b6c103353a8a0800000000000000
+      internalID: -6295096388033509887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 616
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69e63b83bab716b0800000000000000
+      internalID: -5325582754044778134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 615
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d6c17cf7e8d75d0800000000000000
+      internalID: -3063135492089549553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_6
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 615
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024613810af5324e0800000000000000
+      internalID: -2007655867671813088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_7
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 614
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6813ad281837cb0800000000000000
+      internalID: -4867404373250963790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_8
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 613
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4d4bbe5e48ca800800000000000000
+      internalID: 625020571334530244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_9
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 613
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10023aaf91c622e90800000000000000
+      internalID: -7051955207673798655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_10
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 612
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8a799b6e5ecf500800000000000000
+      internalID: 431472443439687867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_11
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 541
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a685b83c9addde50800000000000000
+      internalID: 6835860173919454888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_12
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 543
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717389b3f624442b0800000000000000
+      internalID: -5601278991033420009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 544
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e140ffb5282600d10800000000000000
+      internalID: 2089778539128620062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_14
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 545
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da725e48161ff500800000000000000
+      internalID: 432088382899911385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_15
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 546
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4247c60db957b820800000000000000
+      internalID: 2933912350652580428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_16
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 509
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f434fa6f34da8c60800000000000000
+      internalID: 7821297071724705013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_17
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 548
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbb5bf3c64dce970800000000000000
+      internalID: 8785630534483426238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_18
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 509
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15402076f405f1e10800000000000000
+      internalID: 2170541847376692305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_19
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 549
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d3124270cab9010800000000000000
+      internalID: 1196739272667905368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 512
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edcfdc1f7853c84c0800000000000000
+      internalID: -4283990287542518562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 511
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13319fe7e8b7bf200800000000000000
+      internalID: 214901259176055601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 539
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56baeab343787d430800000000000000
+      internalID: 3807660668374395749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_23
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 511
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3075eb1ddc5d098b0800000000000000
+      internalID: -5147379294120552701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_24
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 540
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5074a9c3c6298b50800000000000000
+      internalID: 6595845751604277339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_25
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 510
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2157ca5b4fc785ea0800000000000000
+      internalID: -5883815522697710318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 510
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f803a4417565f50800000000000000
+      internalID: 6869774026255929177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_27
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 510
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc80fd328d0f08450800000000000000
+      internalID: 6089131507310332108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_28
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 510
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320e9832c4ee67d10800000000000000
+      internalID: 2123146285132931107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_29
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 509
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd8144af6808bba0800000000000000
+      internalID: -6073094821918962220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_30
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 530
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cac1aea8644c57c0800000000000000
+      internalID: -4081311945907385658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_31
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 531
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29918c60cce4751b0800000000000000
+      internalID: -5667974967828407918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_32
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 455
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f36059bffda8a4d0800000000000000
+      internalID: -3123055027744119816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_33
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 457
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87a5b057c63b9870800000000000000
+      internalID: 8690600135621977996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_34
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 458
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd17d62aa4a8da7f0800000000000000
+      internalID: -599671122213113377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_35
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 459
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfccec4049870b20800000000000000
+      internalID: 3100597777729376218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_36
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 460
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a88b6e599d01b30800000000000000
+      internalID: 4256140885709326893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_37
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 462
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c35735d6cba85130800000000000000
+      internalID: 3555780776278053826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_38
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 450
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc259dca58332af0800000000000000
+      internalID: -422431977395376957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 451
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702e65689b2600e20800000000000000
+      internalID: 3314757874706997767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_40
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 453
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9bbb79a09dbf570800000000000000
+      internalID: 8501627361110505900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_41
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 409
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce1ea4fac7adb5b0800000000000000
+      internalID: -5350936292115996985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_42
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 454
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 846725484ed7dd8c0800000000000000
+      internalID: -3972880875844897208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_43
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 410
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3394e5df6d3ce5a90800000000000000
+      internalID: -7323200615916615373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_44
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 410
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40422ce93feeee250800000000000000
+      internalID: 5975976485675213828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_45
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 410
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9b6830d1158b810800000000000000
+      internalID: 1781262837680093618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_46
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 410
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eec667c7e7f762a0800000000000000
+      internalID: -6744149342109118750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_47
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 411
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4214450a737fe00800000000000000
+      internalID: 1078391797526373599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 443
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b344ba362e403870800000000000000
+      internalID: 8660508009534079920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_49
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 409
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b321cd2e978b92f0800000000000000
+      internalID: -965028581698624589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 409
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d21aab7732be560800000000000000
+      internalID: 7344002614496931073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_51
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 409
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa4cfa3f501140e0800000000000000
+      internalID: -2287529134529951057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_52
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 411
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8b6542ded36fde0800000000000000
+      internalID: -1299783353723602783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_53
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 442
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a8865670ac97060800000000000000
+      internalID: 6951809632938003076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_54
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 433
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7086cead105de70800000000000000
+      internalID: 9139213058599028732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_55
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 429
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c46e1fbce224ab0800000000000000
+      internalID: -5025402780720411559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_56
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 430
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392966dc5da821db0800000000000000
+      internalID: -4822639600081661293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_57
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 431
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd72636026b6c5ae0800000000000000
+      internalID: -1559253302221854757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_58
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 432
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7eec418242bc8e0800000000000000
+      internalID: -1672203082071611456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 432
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b56d2cdbea2daf0800000000000000
+      internalID: -373043689077449958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_60
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 433
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8758ea46aac8c5820800000000000000
+      internalID: 2908354122835985784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_61
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 434
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490575d60a11b92d0800000000000000
+      internalID: -3271001323627655020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_62
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 363
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0ef9ab4fa72aca0800000000000000
+      internalID: -6007103761437171467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_63
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 364
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ad2fc0d74d24e90800000000000000
+      internalID: -7042833233700791783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_64
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 365
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130e5fe6e2d02a210800000000000000
+      internalID: 1342650131991093297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_65
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 341
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf99b8bf695200e70800000000000000
+      internalID: 9079298179174472187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_66
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 342
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3deb425123bce610800000000000000
+      internalID: 1651892119034129726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_67
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 342
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdaaadc0ed1b9190800000000000000
+      internalID: -7954731465459454479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_68
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 342
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9a5a21422cf5ee0800000000000000
+      internalID: -1270083109707732546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_69
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 350
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ece7508709370f10800000000000000
+      internalID: 2235818444393540833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_70
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 351
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba700fe631e2adec0800000000000000
+      internalID: -3541467495972993109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_71
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 352
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cfb320b205418b0800000000000000
+      internalID: -5182429125545296798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_72
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 352
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee64212a4c4840e70800000000000000
+      internalID: 9080528728753325806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_73
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 353
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf2bdafe23b9f430800000000000000
+      internalID: 3817279173531742149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_74
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 344
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32db75e5cc9bf7020800000000000000
+      internalID: 2341794618663222563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_75
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 342
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5f525c4c8f2edb0800000000000000
+      internalID: -4763971931799685647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_76
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 346
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5d5612bacf23b00800000000000000
+      internalID: 806985095182669304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_77
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 354
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23714a0646c076a60800000000000000
+      internalID: 7667110515879188274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_78
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 355
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5af751d4ec6b40800000000000000
+      internalID: 5434970438104669003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_79
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 356
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55741e71189afa5c0800000000000000
+      internalID: -4201953555396868267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_80
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 349
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dee97cd6c203c9a0800000000000000
+      internalID: -6214120007715393836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_81
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 350
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32aa1e3df18318780800000000000000
+      internalID: -8682596897243682269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_82
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 357
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711a3346cb8f9ca40800000000000000
+      internalID: 5389111917144154391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_83
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 351
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1865254508baff0800000000000000
+      internalID: -23784273373396559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_84
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 343
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ae4c9ac34602720800000000000000
+      internalID: 2819363578443000476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_85
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 311
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58de8834d79256a80800000000000000
+      internalID: -8474321505847022203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_86
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 343
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84aaab0b12317910800000000000000
+      internalID: 1833301615057740941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_87
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 344
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097dd1f3ecbefcff0800000000000000
+      internalID: -13533002804111472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 311
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d83a1f443559b160800000000000000
+      internalID: 7041753175524260051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_89
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 345
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19caf96e85da770f0800000000000000
+      internalID: -1119235385040327535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_90
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 311
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c58f3bcc9949715e0800000000000000
+      internalID: -1938917726274455460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_91
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 311
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b225112e2dae95f0800000000000000
+      internalID: -747970074461789517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_92
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 346
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e7c4a1359579c00800000000000000
+      internalID: 907292063396822630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_93
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 347
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfac6b20b0b387db0800000000000000
+      internalID: -4794016884859680005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_94
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 310
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e757802f77009860800000000000000
+      internalID: 7534530419178821600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_95
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 347
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a0a5c08f9c6e390800000000000000
+      internalID: -7789316438294394362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_96
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 347
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abf82db868ae4160800000000000000
+      internalID: 7011726837666085796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_97
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 310
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfac1fb50298c9230800000000000000
+      internalID: 3646940570337790717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_98
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 348
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdcb1ebdeba12e90800000000000000
+      internalID: -7052166503900394052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_99
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 348
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96d5d0dc415741e0800000000000000
+      internalID: -2213711301466270053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_100
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 310
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cb0f8bdacd92f70800000000000000
+      internalID: 9163097555552222252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_101
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 310
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5f0df0e5d379860800000000000000
+      internalID: 7536559975629387256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_102
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 342
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63decb8fe5e1fe330800000000000000
+      internalID: 3742243208617061686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_103
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 310
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a52f7cee5c4c060800000000000000
+      internalID: 6972915752423807529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_104
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 343
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54eeb96602cecbbb0800000000000000
+      internalID: -4918797069090820539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_105
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 336
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413949f8fed64ac30800000000000000
+      internalID: 4369738414129713940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_106
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 342
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f06335a49246a680800000000000000
+      internalID: -8744228420299038478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_107
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 310
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79c11a7edcbf5ca0800000000000000
+      internalID: -6025890112681686659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_108
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 336
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8075fadb76ce68170800000000000000
+      internalID: 8180485703473256200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_109
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 343
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74a628feba93ec10800000000000000
+      internalID: 2081677597773046907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_110
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420414c162b6fe150800000000000000
+      internalID: 5904055447932977188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_111
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 336
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecf62dc5eff3e1d0800000000000000
+      internalID: -3322530737614816028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_112
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 336
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175986aeb9a8e7650800000000000000
+      internalID: 6232571336584631665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_113
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 337
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d373587a1bcea0800000000000000
+      internalID: -5851554186739328825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_114
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 338
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31af8dfc642df5860800000000000000
+      internalID: 7520961104308664851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_115
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 339
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea7f205c331815a0800000000000000
+      internalID: -6550464508246131993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_116
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 340
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197ff16b581ed47a0800000000000000
+      internalID: -6391204331766417519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_117
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 341
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545d7003f1ce659f0800000000000000
+      internalID: -479936691574418107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_118
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 325
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c7fdac5ec420b40800000000000000
+      internalID: 5404967052632882306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_119
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 309
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fe7627e8001f700800000000000000
+      internalID: 572239239457533848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_120
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 326
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dff3bb733eac290800000000000000
+      internalID: -7869227570372280965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_121
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 309
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e18e28620b3ec910800000000000000
+      internalID: 1859488577674445281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_122
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 253
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f46060f4f5346f30800000000000000
+      internalID: 4567835248181667060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_123
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 254
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574502e27065f6f80800000000000000
+      internalID: -8111169815032343435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_124
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 255
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09188d646a973fad0800000000000000
+      internalID: -2669656399040446064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_125
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 256
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45be208b35f66ed40800000000000000
+      internalID: 5613296390924069716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_126
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 257
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ac77682c03c76a0800000000000000
+      internalID: -6450226954263606733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_127
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 258
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee324e0185ae1ed0800000000000000
+      internalID: -2441331974279643420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_128
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 259
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018b8a7eb31471f90800000000000000
+      internalID: -6983040971669194736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_129
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 259
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b3ed6d29d315900800000000000000
+      internalID: 671385520334322527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_130
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 260
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5eb3dd939be5bc0800000000000000
+      internalID: -3792390178023414335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_131
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 260
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421d4b5e11aca7d10800000000000000
+      internalID: 2124232352475697444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_132
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 261
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df488438307553c0800000000000000
+      internalID: -4371464476591370288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_133
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 262
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd1f200c9959d9f0800000000000000
+      internalID: -443224561766425128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_134
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 262
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1862e6486e88df80800000000000000
+      internalID: -8081552952799369187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_135
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39052ccda5b12d60800000000000000
+      internalID: 7863766182424545595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_136
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 264
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60d4d4c35b4429c0800000000000000
+      internalID: -3952951749767802772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_137
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 264
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15e8c9e4e759afe0800000000000000
+      internalID: -1177313186894256865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_138
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 265
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e376c874b6aa136b0800000000000000
+      internalID: -5318282307209238722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_139
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 246
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd6c45273db5cc80800000000000000
+      internalID: -8303022293441024582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 254
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27b0e22f26b27d70800000000000000
+      internalID: 9039487715650877231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_141
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 247
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54eee8c3ad3bfd330800000000000000
+      internalID: 3737903965641043525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_142
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 256
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34af8975204913710800000000000000
+      internalID: 1671279674511653443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_143
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 247
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140b1c3273f9d6b70800000000000000
+      internalID: 8893939898298511425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_144
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 257
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbdd095a0e78d730800000000000000
+      internalID: 4024104849964391364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_145
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 248
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419d79c328e2e7040800000000000000
+      internalID: 4647203002390141204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_146
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 249
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cc440df68cdaae0800000000000000
+      internalID: -1536351515302376395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_147
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 249
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aca1f6058fe2cba0800000000000000
+      internalID: -6070025993115816795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_148
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 251
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6a7f00dd899aa60800000000000000
+      internalID: 7685842314055886531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_149
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 250
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed3221ed5a2a13b0800000000000000
+      internalID: -5541069808828531221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_150
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 252
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ea62b3081a6d040800000000000000
+      internalID: 4672099235563744911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_151
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 251
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1430a05863d8670800000000000000
+      internalID: 8542544013218234807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_152
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 208
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8195288b8f2c6520800000000000000
+      internalID: 2696582553219207565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_153
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 253
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c56c887afb8178c0800000000000000
+      internalID: -4003264685875108409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_154
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 251
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d51e5f7348da4d0800000000000000
+      internalID: -3121693590814630653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_155
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 222
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d41f1a33e74873d0800000000000000
+      internalID: -3208735693243214635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_156
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 252
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5155fb1fc462db0800000000000000
+      internalID: -4817078150245313073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_157
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 210
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c668babfa448032f0800000000000000
+      internalID: -995150060064110996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_158
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 237
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80296f96ebab0d70800000000000000
+      internalID: 9010484486490103946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_159
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 209
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171076511014ddbc0800000000000000
+      internalID: -3756775041247280783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_160
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 238
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754752df63c23bdb0800000000000000
+      internalID: -4777426165023017897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_161
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 209
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c87ed07a06e78f60800000000000000
+      internalID: 8036644992583628993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_162
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 209
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830d9f787c51f5230800000000000000
+      internalID: 3629643771407880248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_163
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 209
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96683e3fb45901090800000000000000
+      internalID: -8065782779173697943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_164
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 209
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038de8791d943b640800000000000000
+      internalID: 5094496768025876528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_165
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 250
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23eee3745f5a1cd20800000000000000
+      internalID: 3297098875092790834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_166
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 240
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2917d876c8a540680800000000000000
+      internalID: -8789801013641121390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_167
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 208
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb5923be8d9788a0800000000000000
+      internalID: -6302895917264970824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_168
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 241
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b46547ed4c5c580800000000000000
+      internalID: -8807417036539540668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_169
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 208
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285860a42f8925e80800000000000000
+      internalID: -8191316605842061950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_170
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 242
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38372495596930250800000000000000
+      internalID: 5909732704232043395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_171
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 242
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd88ade9ee1ddf7d0800000000000000
+      internalID: -2882917363649705764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_172
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 208
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2240cee7ebde6a0800000000000000
+      internalID: -6418264441598238004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_173
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 243
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5005a8b2e0cba89d0800000000000000
+      internalID: -2771195851647070203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_174
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 226
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66659de3d72078f40800000000000000
+      internalID: 5730551787800843878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_175
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 227
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7896d7227997023a0800000000000000
+      internalID: -6692215356246890105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_176
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 227
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943f425b783829130800000000000000
+      internalID: 3572062073341145929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_177
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 228
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba12338075377320800000000000000
+      internalID: 2555570070909754036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_178
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 228
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6b959a44c7e60f0800000000000000
+      internalID: -1121822622827825439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_179
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 209
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c77df82a805a2e0800000000000000
+      internalID: -2115274955689591705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_180
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 208
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331c6cd367037f260800000000000000
+      internalID: 7131221819365179699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_181
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 208
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37849780ca07e6e0800000000000000
+      internalID: -1808464903341308101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_182
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 208
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7474f89bd0a0e7020800000000000000
+      internalID: 2341319910343264071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_183
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 208
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c732944c655a4d30800000000000000
+      internalID: 4416436308085454785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_184
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 208
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2496a4da6d5a8d0800000000000000
+      internalID: -2835624350593760603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_185
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 207
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a81c2fb1fcbcb4a50800000000000000
+      internalID: 6506518177054376330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_186
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 207
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54182dba74ca2fdf0800000000000000
+      internalID: -147866413924449979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_187
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 214
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe332de73c110a10800000000000000
+      internalID: 1873809946490126065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_188
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 207
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c5da2918d534a0800000000000000
+      internalID: -6614142875119269881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_189
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 208
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe15e55c58277710800000000000000
+      internalID: 1690864562144091892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_190
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 166
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5033ec0c54f41dc70800000000000000
+      internalID: 8994057091841667845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_191
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 166
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7568e52ccfb68bd0800000000000000
+      internalID: -2628202448993884803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_192
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 167
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9630627e0cb90f80800000000000000
+      internalID: -8139768081260988774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_193
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 168
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6bf5d15b73333e0800000000000000
+      internalID: -2075253752266246472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_194
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 154
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc623c6b5993be10800000000000000
+      internalID: 2212280459905363198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_195
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 169
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff1ece6fd47701d0800000000000000
+      internalID: -3384608091960107024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_196
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbba963d8c04c610800000000000000
+      internalID: 1640449964915735517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_197
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 155
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1937b1f3aee31e70800000000000000
+      internalID: 9084867261238819102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_198
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 162
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffe4d1be806e39a0800000000000000
+      internalID: -6251453066758524944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_199
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 172
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4e74528d24e2210800000000000000
+      internalID: 1310058037717230790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_200
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 156
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224f54c2c99796900800000000000000
+      internalID: 678206930560611362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_201
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 157
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50dfa28f3c5484ee0800000000000000
+      internalID: -1276693786375029499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_202
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 158
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58493375e9f5e830800000000000000
+      internalID: 4099957799666665566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_203
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 123
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c21b2f94a132abe0800000000000000
+      internalID: -1467555945454562624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_204
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 153
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b51f204c4939dec0800000000000000
+      internalID: -3541736632293059147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_205
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 144
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb14370edb91add0800000000000000
+      internalID: -2476526942171161610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_206
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 123
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52351286c05497f40800000000000000
+      internalID: 5726684320767234853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_207
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 154
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4c304a1edc7f360800000000000000
+      internalID: 7203452498005443801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_208
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 144
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381821ac05fb415e0800000000000000
+      internalID: -1939715185781341821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_209
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 107
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f4e50c59fd1eca0800000000000000
+      internalID: -5989260195155521762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_210
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 139
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2dbc9bea4d578d0800000000000000
+      internalID: -2849137342335429916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_211
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0c87541b2524f20800000000000000
+      internalID: 3405375189573746913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_212
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 145
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a463ec980800400800000000000000
+      internalID: 288371705510251040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_213
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 156
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab4c7a415bcea3a0800000000000000
+      internalID: -6652156049577194581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_214
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 147
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af30ad983972f3a0800000000000000
+      internalID: -6633106017093664857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_215
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 146
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d753197198681f80800000000000000
+      internalID: -8135637752833943598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_216
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 148
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3877dc9a6734f670800000000000000
+      internalID: 8571536921830324283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_217
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 146
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffdd91a0a0fe2fb0800000000000000
+      internalID: -4670531190839713808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_218
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 152
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f213e290576e6d0800000000000000
+      internalID: -2961551022659391633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_219
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 147
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d330ffdbdeefe5700800000000000000
+      internalID: 531142103124607805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_220
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 149
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c365cb29c6be31de0800000000000000
+      internalID: -1363487410612316612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_221
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 108
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f430d2d1051af9e40800000000000000
+      internalID: 5665424221714318159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_222
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 129
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cf7b1a9295cb970800000000000000
+      internalID: 8771984209552604272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_223
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 107
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb853ea703018e420800000000000000
+      internalID: 2659393380368472251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_224
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 139
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39d149f26be69df0800000000000000
+      internalID: -173692725286020802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_225
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 129
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641ed44ac2fadc3c0800000000000000
+      internalID: -4337618259817930426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_226
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 139
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e3c2ef195764ed0800000000000000
+      internalID: -2430125679024783765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_227
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 107
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a1c075bc94e6c80800000000000000
+      internalID: -8327637523273868749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_228
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 140
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9c2f4584e3e95a0800000000000000
+      internalID: -6512699530747393548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_229
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 129
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19ddb95b0306e5c0800000000000000
+      internalID: -4186655456309159654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_230
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 139
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b8a8fabb6c4a790800000000000000
+      internalID: -7519666968395609243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_231
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 128
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830e9a2ca4d1c2c00800000000000000
+      internalID: 877108234361102392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_232
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 141
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0334f3a4412fc70800000000000000
+      internalID: 9003280914188546297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_233
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04fdd1e260eb5d7f0800000000000000
+      internalID: -588355242549190848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_234
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 140
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64b66b7b6d7d6140800000000000000
+      internalID: 4714562285512078446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_235
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 128
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5faa0cce9288d6450800000000000000
+      internalID: 6083668385294494453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_236
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 141
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d6aa604efb83390800000000000000
+      internalID: -7838304165353067233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_237
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 130
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f5b85091705ccf0800000000000000
+      internalID: -232772001691115640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_238
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 140
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4a4fcb7de121ae0800000000000000
+      internalID: -1580166607316671310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_239
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 128
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b2f013c7c7aa7d0800000000000000
+      internalID: -2906373736673367173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_240
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 142
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9a0441abc3d54a0800000000000000
+      internalID: -6603054708753913411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_241
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 130
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9d5264e866215a0800000000000000
+      internalID: -6552061746622375469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_242
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 114
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1c61244eeef4f60800000000000000
+      internalID: 8020892125498884601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_243
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 114
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3978136b7d1bc640800000000000000
+      internalID: 5101203418707949882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_244
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 108
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77e62cfdcf94ba00800000000000000
+      internalID: 771417143234717563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_245
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 114
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf7e79d126edad70800000000000000
+      internalID: 9056147458769190878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_246
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 123
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4617f9cfe87df8950800000000000000
+      internalID: 6453613800168845668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_247
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 107
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81288e8d5537d6a0800000000000000
+      internalID: -6424607667481206386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_248
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 114
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e625e0b72f0cb60800000000000000
+      internalID: 7764472367921917524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_249
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 123
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4666cadd5b49930800000000000000
+      internalID: 4149141120399860914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_250
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 107
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9ecbfb32d1f1c60800000000000000
+      internalID: 7790977919752137126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_251
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 114
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48eae413db1ab7120800000000000000
+      internalID: 2412699859335163524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_252
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 124
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2e7f167d4cdda20800000000000000
+      internalID: 3088841348786676438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_253
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 107
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47880b282f25782f0800000000000000
+      internalID: -970715993146881932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_254
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 107
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e63d681b62f14b0800000000000000
+      internalID: -5467608878691422630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_255
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 108
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb958ceaffe6a2a70800000000000000
+      internalID: 8802970466077137340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_256
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 107
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcacf7ec1c76e0780800000000000000
+      internalID: -8714914146824500529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_257
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5165d2f796a70a0800000000000000
+      internalID: -6883073085540002338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_258
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0acb75b22650c30800000000000000
+      internalID: 4324970955454324922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_259
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddb144ed1b8082c0800000000000000
+      internalID: -4431389072832741933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_260
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c2e159696717880800000000000000
+      internalID: -8614974223064093683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_261
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 106
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8aeac844d46c5fc0800000000000000
+      internalID: -3504815547083986294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_262
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 107
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f48c9f5a2c88b50800000000000000
+      internalID: 6595735672400138074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_263
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae47af876363fcc0800000000000000
+      internalID: -3678487174188675411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_264
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 107
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203f41c807d5d3bc0800000000000000
+      internalID: -3801779772462927102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_265
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 106
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3115590fb27160ca0800000000000000
+      internalID: -6051123571838332653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CircleSplosionV2_100x100px_266
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 107
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b6ab8f86d4fe420800000000000000
+      internalID: 2661431018044156783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

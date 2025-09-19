@@ -10,6 +10,10 @@ public class Omok : MonoBehaviour
     [SerializeField] private Sprite forbiddenSprite; // X마크 스프라이트 할당 - 이재현
     [SerializeField] private Sprite previewSprite;
     [SerializeField] private SpriteRenderer markerSR;
+    
+    // 폭발 이펙트 프리팹 추가 - 이재현
+    [Header("FX Prefab")]
+    [SerializeField] private GameObject explodeFXPrefab;
 
     public enum MarkerType { None, White, Black, Preview, Forbidden } // Forbidden(x마크)추가 - 이재현
     private MarkerType currentMarker = MarkerType.None;
@@ -97,6 +101,15 @@ public class Omok : MonoBehaviour
 
         // 전체 시간동안 5번 회전
         transform.DORotate(new Vector3(0, 1800, 1800), 1.7f, RotateMode.FastBeyond360).SetEase(Ease.OutQuint);
+    }
+    public void PlayExplodeFX()
+    {
+        if (explodeFXPrefab != null)
+        {
+            var fx = Instantiate(explodeFXPrefab, transform.position, Quaternion.identity);
+            Destroy(fx, 2f); 
+            Debug.Log("폭발 FX 생성됨 : " + fx.name);
+        }
     }
 
     // 임시 선택 애니메이션
