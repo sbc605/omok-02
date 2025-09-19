@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class GameLogic : MonoBehaviour
 {
-    // ★ 현재 턴 수 (1턴 = 흑 첫 수부터 시작)
+    // 현재 턴 수 (1턴 = 흑 첫 수부터 시작)
     public int turnCount = 1;
 
     public int boardSize = 15; // 몇 줄짜리 보드인지 (15x15나 19x19)
@@ -17,7 +17,7 @@ public class GameLogic : MonoBehaviour
     public enum PlayerType { player, CPU }; //플레이어 or AI
     public PlayerType currentPlayer;
     public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출
-    // ★ 금수 좌표 전체를 알리는 이벤트
+    // 금수 좌표 전체를 알리는 이벤트
     public event Action<List<(int r,int c)>> OnForbiddenPositionsChanged;
 
     public enum GameResult { None, Win, Lose, Draw }
@@ -72,12 +72,12 @@ public class GameLogic : MonoBehaviour
         currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
         currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
         turnCount++;
-        // ★ 턴·차례 로그 출력
+        // 턴·차례 로그 출력
         Debug.Log($"[TURN] {turnCount}턴 / 현재 차례: {currentTurn}, 플레이어: {currentPlayer}");
 
         OnTurnChanged?.Invoke(currentPlayer);
 
-        // ★ 흑 차례가 되면 그 시점의 금수 좌표 전체를 다시 알림
+        // 흑 차례가 되면 그 시점의 금수 좌표 전체를 다시 알림
         if (currentTurn == StoneType.Black)
             OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
 
@@ -101,7 +101,7 @@ public class GameLogic : MonoBehaviour
         return overline || openThreeCnt >= 2 || openFourCnt >= 2;
     }
 
-    // ★ 현재 보드에서 흑 금수 좌표 전체 반환
+    // 현재 보드에서 흑 금수 좌표 전체 반환
     public List<(int r,int c)> GetAllForbiddenPositions()
     {
         var list = new List<(int,int)>();
@@ -213,5 +213,20 @@ public class GameLogic : MonoBehaviour
         // UI 출력, 게임 오버 패널 띄우기 등
         Debug.Log($"Game Over : {result}");
         // 필요하다면 입력 막기, 재시작 버튼 활성화 등
+    }
+    
+    
+    
+    public void ClearStone(int row, int col) // ★ 변이룰 돌 삭제 함수
+    {
+        if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return;
+        if (board[row, col] == StoneType.None) return;
+
+        board[row, col] = StoneType.None;
+
+        // 필요하면 UI(OmokController 등)에도 갱신 알림
+        OnStonePlaced?.Invoke(row, col, StoneType.None);
+
+        Debug.Log($"[GameLogic] 삭제된 돌 좌표: ({row},{col})");
     }
 }
