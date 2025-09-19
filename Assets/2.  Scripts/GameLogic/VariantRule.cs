@@ -6,12 +6,14 @@ public class VariantRule : MonoBehaviour
     [SerializeField] private GameLogic gameLogic;
 
     [Header("Phase 1 설정")]
-    [SerializeField] private int triggerTurn = 10;
+    [SerializeField] private int minTriggerTurn = 10;   // 최소 턴
+    [SerializeField] private int maxTriggerTurn = 20;   // 최대 턴
+    private int triggerTurn;                            // 실제 발동 턴
 
-    [Tooltip("흑/백 각각 제거할 돌 개수")]
+    [Header("제거될 돌 개수")]
     [SerializeField] private int removeStone = 2;
 
-    [Tooltip("초기 중앙 흑돌은 제거 대상에서 제외할지")]
+    [Header("초기 중앙 흑돌은 제거 대상에서 제외할지")]
     [SerializeField] private bool excludeCenterStone = true;
 
     private bool phase1Triggered = false;
@@ -27,6 +29,13 @@ public class VariantRule : MonoBehaviour
     {
         if (gameLogic != null)
             gameLogic.OnTurnChanged -= OnTurnChanged;
+    }
+    private void Start()
+    {
+        // 게임 시작 시  [minTriggerTurn, maxTriggerTurn]  사이에서 무작위 발동 턴 선택
+        triggerTurn = UnityEngine.Random.Range(minTriggerTurn, maxTriggerTurn + 1);
+
+        Debug.Log($"[VariantRule] 이번 게임에서 변이룰 발동 턴: {triggerTurn}");
     }
 
     // GameLogic에서 한 수 둘 때마다 호출됨(초기 중앙 흑 셋업 끝난 뒤에도 1회 호출)
@@ -60,7 +69,7 @@ public class VariantRule : MonoBehaviour
         {
             int idx = Random.Range(0, stones.Count);
             var (r, c) = stones[idx];
-            // gl.ClearStone(r, c);      // ⬅️ GameLogic에 보조 메서드 추가 필요
+            gl.ClearStone(r, c);      // ⬅️ GameLogic에 보조 메서드 추가 필요
             stones.RemoveAt(idx);
         }
     }
