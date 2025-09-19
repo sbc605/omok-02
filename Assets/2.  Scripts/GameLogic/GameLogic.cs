@@ -18,9 +18,12 @@ public class GameLogic : MonoBehaviour
     public PlayerType currentPlayer;
     public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출
     // 금수 좌표 전체를 알리는 이벤트
-    public event Action<List<(int r,int c)>> OnForbiddenPositionsChanged;
+    public event Action<List<(int r, int c)>> OnForbiddenPositionsChanged;
 
     public enum GameResult { None, Win, Lose, Draw }
+
+    // ChoiYun : 게임 종료 결과 알려주는 이벤트 추가 
+    public event Action<GameResult> OnGameEnded;
 
     void Start()
     {
@@ -93,23 +96,23 @@ public class GameLogic : MonoBehaviour
     {
         board[row, col] = StoneType.Black;
 
-        bool overline     = CreatesOverline(row, col);
-        int openThreeCnt  = CountOpenThree(row, col);
-        int openFourCnt   = CountOpenFour (row, col);
+        bool overline = CreatesOverline(row, col);
+        int openThreeCnt = CountOpenThree(row, col);
+        int openFourCnt = CountOpenFour(row, col);
 
         board[row, col] = StoneType.None;
         return overline || openThreeCnt >= 2 || openFourCnt >= 2;
     }
 
     // 현재 보드에서 흑 금수 좌표 전체 반환
-    public List<(int r,int c)> GetAllForbiddenPositions()
+    public List<(int r, int c)> GetAllForbiddenPositions()
     {
-        var list = new List<(int,int)>();
+        var list = new List<(int, int)>();
         if (currentTurn != StoneType.Black) return list; // 흑 차례일 때만 계산
         for (int r = 0; r < boardSize; r++)
             for (int c = 0; c < boardSize; c++)
-                if (board[r,c] == StoneType.None && IsForbiddenMove(r,c))
-                    list.Add((r,c));
+                if (board[r, c] == StoneType.None && IsForbiddenMove(r, c))
+                    list.Add((r, c));
         return list;
     }
 
@@ -122,7 +125,7 @@ public class GameLogic : MonoBehaviour
         {
             int count = 1;
             count += CountContinuous(r, c, d.x, d.y, StoneType.Black);
-            count += CountContinuous(r, c,-d.x,-d.y, StoneType.Black);
+            count += CountContinuous(r, c, -d.x, -d.y, StoneType.Black);
             if (count >= 6) return true; // 장목
         }
         return false;
@@ -149,14 +152,14 @@ public class GameLogic : MonoBehaviour
         foreach (var d in dirs)
         {
             int forward = CountContinuous(r, c, d.x, d.y, StoneType.Black);
-            int back    = CountContinuous(r, c,-d.x,-d.y, StoneType.Black);
-            int len     = forward + back + 1;
+            int back = CountContinuous(r, c, -d.x, -d.y, StoneType.Black);
+            int len = forward + back + 1;
 
             if (len == targetLen)
             {
                 bool openFront = IsEmpty(r + (forward + 1) * d.x,
                                          c + (forward + 1) * d.y);
-                bool openBack  = IsEmpty(r - (back + 1) * d.x,
+                bool openBack = IsEmpty(r - (back + 1) * d.x,
                                          c - (back + 1) * d.y);
                 if (openFront && openBack) cnt++;
             }
@@ -184,7 +187,7 @@ public class GameLogic : MonoBehaviour
     }
 
     // ───────── 기존 승패 로직 ─────────
-    
+
     private bool CheckWin(int r, int c) // 승리 판독
     {
         Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
@@ -194,7 +197,7 @@ public class GameLogic : MonoBehaviour
         {
             int count = 1;
             count += CountContinuous(r, c, d.x, d.y, currentTurn);
-            count += CountContinuous(r, c,-d.x,-d.y, currentTurn);
+            count += CountContinuous(r, c, -d.x, -d.y, currentTurn);
             if (count >= 5) return true;
         }
         return false;
@@ -210,13 +213,16 @@ public class GameLogic : MonoBehaviour
 
     private void EndGame(GameResult result)
     {
+        // ChoiYun : 게임 종료 이벤트 호출
+        OnGameEnded?.Invoke(result);
         // UI 출력, 게임 오버 패널 띄우기 등
         Debug.Log($"Game Over : {result}");
-        // 필요하다면 입력 막기, 재시작 버튼 활성화 등
+
+
+        // 이하 TODO : 필요하다면 입력 막기, 재시작 버튼 활성화 등
+        // 여기서 처리 할지는 고민 중
     }
-    
-    
-    
+
     public void ClearStone(int row, int col) // ★ 변이룰 돌 삭제 함수
     {
         if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return;
@@ -229,4 +235,5 @@ public class GameLogic : MonoBehaviour
 
         Debug.Log($"[GameLogic] 삭제된 돌 좌표: ({row},{col})");
     }
+    
 }

@@ -3,13 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDataManager : Singleton<PlayerDataManager>
 {
+    private const string FavorabilitySaveKey = "PlayerFavorability";
+
     public int Favorability { get; private set; }
 
-    // 부모의 Awake를 호출하여 싱글톤 및 DontDestroyOnLoad 설정을 실행합니다.
     protected override void Awake()
     {
         base.Awake();
-        // TODO: 나중에 여기에 저장된 데이터 불러오는 기능 추가 (3단계)
+        // 게임이 처음 시작될 때 저장된 데이터를 불러옵니다.
         LoadData();
     }
 
@@ -18,45 +19,52 @@ public class PlayerDataManager : Singleton<PlayerDataManager>
     {
         Favorability += amount;
         Debug.Log($"호감도 {amount} 증가! 현재 호감도: {Favorability}");
-        // TODO: 변경된 값을 저장하는 기능 추가 (3단계)
+        // 호감도가 변경되었으므로 즉시 저장합니다.
         SaveData();
     }
 
-    // 호감도를 감소시키는 함수
-    public bool DecreaseFavorability(int amount)
+    // 호감도를 감소시키는 함수 (저장 여부를 선택할 수 있도록 수정)
+    public bool DecreaseFavorability(int amount, bool doSave = true)
     {
-        // 가진 호감도가 지불할 양보다 적으면 실패
         if (Favorability < amount)
         {
             Debug.Log("호감도가 부족합니다.");
-            // TODO: 부족 알림 UI 띄우기 (3단계)
             return false;
         }
 
         Favorability -= amount;
         Debug.Log($"호감도 {amount} 감소. 현재 호감도: {Favorability}");
-        // TODO: 변경된 값을 저장하는 기능 추가 (3단계)
-        SaveData();
+        
+        // doSave가 true일 때만 파일에 저장합니다.
+        if (doSave)
+        {
+            SaveData();
+        }
         return true;
     }
 
-    // (3단계에서 구현할 저장 및 불러오기 함수들의 뼈대)
-    private void SaveData()
-    {
-        // PlayerPrefs.SetInt("PlayerFavorability", Favorability);
-    }
-
+    // 디바이스에서 데이터를 불러오는 함수
     private void LoadData()
     {
-        // Favorability = PlayerPrefs.GetInt("PlayerFavorability", 100); // 예: 기본값 100
+        // "PlayerFavorability"라는 키로 저장된 정수 값을 불러옵니다.
+        // 만약 저장된 값이 없다면(최초 실행 시), 기본값으로 100을 사용합니다.
+        Favorability = PlayerPrefs.GetInt(FavorabilitySaveKey, 100);
+        Debug.Log($"데이터 불러오기 완료. 현재 호감도: {Favorability}");
     }
-    
 
+    // 디바이스에 데이터를 저장하는 함수
+    private void SaveData()
+    {
+        // 현재 Favorability 값을 "PlayerFavorability" 키로 저장합니다.
+        PlayerPrefs.SetInt(FavorabilitySaveKey, Favorability);
+        // 변경사항을 디스크에 즉시 기록하도록 요청합니다 (안전장치).
+        PlayerPrefs.Save();
+        Debug.Log("데이터 저장 완료.");
+    }
 
-    // 싱글톤 규칙을 위해서 아래 함수 추가 
+    // (이전에 추가했던 OnSceneLoad 함수는 그대로 유지)
     protected override void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        // PlayerDataManager는 씬이 바뀔 때 특별히 할 일이 없으므로,
-        // 계약 이행을 위해 내용은 비워둔 채로 함수만 만들어줍니다.
+        // PlayerDataManager는 씬이 바뀔 때 특별히 할 일이 없으므로 비워둡니다.
     }
 }
