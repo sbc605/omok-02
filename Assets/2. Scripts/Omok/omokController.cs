@@ -6,8 +6,8 @@ public class OmokController : MonoBehaviour
     [SerializeField] private PlayerState playerState;
     [SerializeField] private Omok omokPrefab;
     [SerializeField] private GameLogic gameLogic;
-    [SerializeField] private float cellSize = 0.32f; // 셀 간격
-    private Vector2 boardOrigin = new Vector2(0, -0.24f); // 보드 시작 위치(중심)
+    [SerializeField] private float cellSize = 0.3f; // 셀 간격
+    private Vector2 boardOrigin = new Vector2(0, -1f); // 보드 시작 위치(중심)
 
     private AudioSource omokEffectPlayer;
     [SerializeField] private AudioClip blackSound;

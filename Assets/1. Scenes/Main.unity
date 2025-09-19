@@ -582,7 +582,6 @@ GameObject:
   - component: {fileID: 1064110823}
   - component: {fileID: 1064110822}
   - component: {fileID: 1064110821}
-  - component: {fileID: 1064110824}
   m_Layer: 5
   m_Name: Button] Setting
   m_TagString: Untagged
@@ -1554,3 +1553,6 @@ SceneRoots:
   - {fileID: 1284157024}
   - {fileID: 1116516276}
   - {fileID: 1070207031}
+  - {fileID: 639983785}
+  - {fileID: 1733061740}
+  - {fileID: 1904433355}
