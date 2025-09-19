@@ -1353,6 +1353,7 @@ GameObject:
   - component: {fileID: 864535559}
   - component: {fileID: 864535558}
   - component: {fileID: 864535557}
+  - component: {fileID: 864535560}
   m_Layer: 5
   m_Name: 'Timer Enivorment '
   m_TagString: Untagged
@@ -1467,6 +1468,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864535555}
   m_CullTransparentMesh: 1
+--- !u!114 &864535560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864535555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658ad2541c031b249a82626f1876e0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBar: {fileID: 1142329312}
 --- !u!1 &953643199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,9 +1844,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 107, y: 10}
-  m_SizeDelta: {x: 200, y: 17}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 19, y: 9.999964}
+  m_SizeDelta: {x: 300, y: 17}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1142329312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1857,7 +1871,7 @@ MonoBehaviour:
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -4257,6 +4271,7 @@ MonoBehaviour:
   playerState: {fileID: 7638057813842783967}
   omokPrefab: {fileID: 3409118808372465647, guid: c89915196d077b646aee71e5e97f04ec, type: 3}
   gameLogic: {fileID: 4675096240422733515}
+  timer: {fileID: 864535560}
   cellSize: 0.3
   blackSound: {fileID: 8300000, guid: 57b63fa59d63df6489d9c8272af3d2e7, type: 3}
   whiteSound: {fileID: 8300000, guid: 962bebcb86da44643af87c2b67c006eb, type: 3}

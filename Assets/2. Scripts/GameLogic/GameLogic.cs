@@ -91,6 +91,21 @@ public class GameLogic : MonoBehaviour
     public StoneType GetStone(int row, int col) => board[row, col];
     public StoneType GetCurrentTurn() => currentTurn;
 
+    // 30초 제한 시간 턴 전환
+    public void PassTurn()
+    {
+        currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
+        currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
+        turnCount++;
+
+        Debug.Log($"[TURN PASSED] {turnCount}턴 / 현재 차례: {currentTurn}, 플레이어: {currentPlayer}");
+
+        OnTurnChanged?.Invoke(currentPlayer);
+
+        if (currentTurn == StoneType.Black)
+            OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
+    }
+
     // ───────── 금수 판정 ─────────
     private bool IsForbiddenMove(int row, int col)
     {
