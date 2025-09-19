@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7209099273767837980
+--- !u!1 &1582861486441757472
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 930356493576394995}
-  - component: {fileID: 55350745574234544}
-  - component: {fileID: 4792707532971071360}
+  - component: {fileID: 8517192865373088609}
+  - component: {fileID: 6266132327053061923}
   m_Layer: 0
-  m_Name: Game Logic
+  m_Name: PlayerDataManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &930356493576394995
+--- !u!4 &8517192865373088609
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7209099273767837980}
+  m_GameObject: {fileID: 1582861486441757472}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -33,34 +32,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &55350745574234544
+--- !u!114 &6266132327053061923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7209099273767837980}
+  m_GameObject: {fileID: 1582861486441757472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e600c9d0e2a1a40ea9769a60372f4fe1, type: 3}
+  m_Script: {fileID: 11500000, guid: 421127b9aa375504fa77c6aa3cb15887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnCount: 1
-  boardSize: 15
-  currentPlayer: 0
---- !u!114 &4792707532971071360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7209099273767837980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6a7d8109a06042b48c8ce86fb0c72e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameLogic: {fileID: 55350745574234544}
-  triggerTurn: 10
-  removeStone: 2
-  excludeCenterStone: 1
