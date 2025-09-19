@@ -1,113 +1,239 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
 
 public class GameLogic : MonoBehaviour
 {
-   // 몇 줄짜리 보드인지 (15x15나 19x19)
-   [SerializeField] private int boardSize = 15;
-   // 현재 돌 배치 상태
-   private StoneType[,] board;   // StoneType.None / Black / White
-   
-   // 바둑돌 관련
-   public enum StoneType { None, Black, White }
-   public GameObject blackstone; // 바둑돌 오브젝트 
-   public GameObject whitestone; // 바둑돌 오브젝트
-   private StoneType currentTurn = StoneType.Black; // 흑 선공
-   
-   public BlockController blockController;
-   public enum PlayerType{ player, CPU }; //플레이어 or AI
+    // 현재 턴 수 (1턴 = 흑 첫 수부터 시작)
+    public int turnCount = 1;
 
-   public GameObject Gomokuboard; // 바둑판 오브젝트
-   public enum GameResult { None, Win, Lose, Draw }
-  
-   void Start() //보드 배열 초기화 및 흑돌 중앙 착수 시작
-   {
-      board = new StoneType[boardSize, boardSize];
-      currentTurn = StoneType.Black;
+    public int boardSize = 15; // 몇 줄짜리 보드인지 (15x15나 19x19)
+    private StoneType[,] board;   // StoneType.None / Black / White
 
-      // 중앙 좌표 계산
-      int center = boardSize / 2;
+    public enum StoneType { None, Black, White }
+    private StoneType currentTurn = StoneType.Black; // 흑 선공
+    public event Action<int, int, StoneType> OnStonePlaced; // 돌 놓일 때 호출 // 추가(수아)
 
-      // 가운데 자동 착수 (PlaceStone을 그대로 호출)
-      PlaceStone(center, center);
+    public enum PlayerType { player, CPU }; //플레이어 or AI
+    public PlayerType currentPlayer;
+    public event Action<PlayerType> OnTurnChanged; // 턴 변경시 호출
+    // 금수 좌표 전체를 알리는 이벤트
+    public event Action<List<(int r, int c)>> OnForbiddenPositionsChanged;
 
-      // 첫 수가 자동으로 흑이 두어졌으니 턴을 백으로 넘김
-      currentTurn = StoneType.White;
-   }
-   public bool PlaceStone(int row, int col) // 착수
-   {
-      // 범위/중복 체크
-      if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return false;
-      if (board[row, col] != StoneType.None) return false;
+    public enum GameResult { None, Win, Lose, Draw }
 
-      // 보드 데이터 갱신
-      board[row, col] = currentTurn;
+    // ChoiYun : 게임 종료 결과 알려주는 이벤트 추가 
+    public event Action<GameResult> OnGameEnded;
 
-      // 실제 오브젝트 배치
-      GameObject prefab = (currentTurn == StoneType.Black) ? blackstone : whitestone;
-      Instantiate(prefab, blockController.GetWorldPosition(row, col), Quaternion.identity, Gomokuboard.transform);
+    void Start()
+    {
+        board = new StoneType[boardSize, boardSize];
+        currentTurn = StoneType.Black;
+        currentPlayer = PlayerType.player;
 
-      // 승리 판정
-      if (CheckWin(row, col))
-      {
-         EndGame(GameResult.Win);
-         return true;
-      }
+        int centerRow = boardSize / 2;
+        int centerCol = boardSize / 2;
+        PlaceStone(centerRow, centerCol);
 
-      // 무승부
-      if (IsBoardFull())
-      {
-         EndGame(GameResult.Draw);
-         return true;
-      }
+        // 턴 변경
+        currentTurn = StoneType.White;
+        currentPlayer = PlayerType.CPU;
+        OnTurnChanged?.Invoke(currentPlayer);
+    }
 
-      // 턴 전환
-      currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
-      return true;
-   }
-   
-   private bool CheckWin(int r, int c) // 승부 여부 체크
-   {
-      Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
-         new Vector2Int(1,1), new Vector2Int(1,-1) };
+    public bool PlaceStone(int row, int col)
+    {
+        // 범위 / 중복 체크
+        if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return false;
+        if (board[row, col] != StoneType.None) return false;
 
-      foreach (var d in dirs)
-      {
-         int count = 1;
-         count += CountStones(r, c, d.x, d.y);
-         count += CountStones(r, c, -d.x, -d.y);
-         if (count >= 5) return true;
-      }
-      return false;
-   }
-   
+        // 금수 검사 : 흑만 적용
+        if (currentTurn == StoneType.Black && IsForbiddenMove(row, col))
+        {
+            Debug.Log("금수 위치입니다.");
+            // ★ 금수 좌표 갱신(모든 금수 위치를 계산해 이벤트로 알림)
+            OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
+            return false;
+        }
 
-   private int CountStones(int r, int c, int dx, int dy)
-   {
-      int cnt = 0;
-      int nr = r + dx, nc = c + dy;
-      while (nr >= 0 && nr < boardSize && nc >= 0 && nc < boardSize &&
-             board[nr, nc] == currentTurn)
-      {
-         cnt++;
-         nr += dx; nc += dy;
-      }
-      return cnt;
-   }
-   private bool IsBoardFull() // 무승부(꽉찼을 때)
-   {
-      for (int r = 0; r < boardSize; r++)
-      {
-         for (int c = 0; c < boardSize; c++)
-         {
-            if (board[r, c] == StoneType.None) return false;
-         }
-      }
-      return true;
-   }
-   private void EndGame(GameResult result)
-   {
-      // UI 출력, 게임 오버 패널 띄우기 등
-      Debug.Log($"Game Over : {result}");
-      // 필요하다면 입력 막기, 재시작 버튼 활성화 등
-   }
+        board[row, col] = currentTurn;
+        OnStonePlaced?.Invoke(row, col, currentTurn); // 추가(수아)
+
+        if (CheckWin(row, col))
+        {
+            EndGame(GameResult.Win);
+            return true;
+        }
+
+        if (IsBoardFull())
+        {
+            EndGame(GameResult.Draw);
+            return true;
+        }
+
+        // 턴 전환
+        currentTurn = (currentTurn == StoneType.Black) ? StoneType.White : StoneType.Black;
+        currentPlayer = (currentPlayer == PlayerType.player) ? PlayerType.CPU : PlayerType.player;
+        turnCount++;
+        // 턴·차례 로그 출력
+        Debug.Log($"[TURN] {turnCount}턴 / 현재 차례: {currentTurn}, 플레이어: {currentPlayer}");
+
+        OnTurnChanged?.Invoke(currentPlayer);
+
+        // 흑 차례가 되면 그 시점의 금수 좌표 전체를 다시 알림
+        if (currentTurn == StoneType.Black)
+            OnForbiddenPositionsChanged?.Invoke(GetAllForbiddenPositions());
+
+        return true;
+    }
+
+    // board, currentTurn 접근용
+    public StoneType GetStone(int row, int col) => board[row, col];
+    public StoneType GetCurrentTurn() => currentTurn;
+
+    // ───────── 금수 판정 ─────────
+    private bool IsForbiddenMove(int row, int col)
+    {
+        board[row, col] = StoneType.Black;
+
+        bool overline = CreatesOverline(row, col);
+        int openThreeCnt = CountOpenThree(row, col);
+        int openFourCnt = CountOpenFour(row, col);
+
+        board[row, col] = StoneType.None;
+        return overline || openThreeCnt >= 2 || openFourCnt >= 2;
+    }
+
+    // 현재 보드에서 흑 금수 좌표 전체 반환
+    public List<(int r, int c)> GetAllForbiddenPositions()
+    {
+        var list = new List<(int, int)>();
+        if (currentTurn != StoneType.Black) return list; // 흑 차례일 때만 계산
+        for (int r = 0; r < boardSize; r++)
+            for (int c = 0; c < boardSize; c++)
+                if (board[r, c] == StoneType.None && IsForbiddenMove(r, c))
+                    list.Add((r, c));
+        return list;
+    }
+
+    private bool CreatesOverline(int r, int c)
+    {
+        Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
+                              new Vector2Int(1,1), new Vector2Int(1,-1) };
+
+        foreach (var d in dirs)
+        {
+            int count = 1;
+            count += CountContinuous(r, c, d.x, d.y, StoneType.Black);
+            count += CountContinuous(r, c, -d.x, -d.y, StoneType.Black);
+            if (count >= 6) return true; // 장목
+        }
+        return false;
+    }
+
+    private int CountOpenThree(int r, int c)
+    {
+        // 열린 "3" 패턴(○●●●○)을 세는 간단한 예시
+        // 실제 대회 규칙에 맞게 세분화 가능
+        return CountOpenPattern(r, c, 3);
+    }
+
+    private int CountOpenFour(int r, int c)
+    {
+        // 열린 "4" 패턴(○●●●●○) 카운트
+        return CountOpenPattern(r, c, 4);
+    }
+
+    private int CountOpenPattern(int r, int c, int targetLen)
+    {
+        Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
+                              new Vector2Int(1,1), new Vector2Int(1,-1) };
+        int cnt = 0;
+        foreach (var d in dirs)
+        {
+            int forward = CountContinuous(r, c, d.x, d.y, StoneType.Black);
+            int back = CountContinuous(r, c, -d.x, -d.y, StoneType.Black);
+            int len = forward + back + 1;
+
+            if (len == targetLen)
+            {
+                bool openFront = IsEmpty(r + (forward + 1) * d.x,
+                                         c + (forward + 1) * d.y);
+                bool openBack = IsEmpty(r - (back + 1) * d.x,
+                                         c - (back + 1) * d.y);
+                if (openFront && openBack) cnt++;
+            }
+        }
+        return cnt;
+    }
+
+    private bool IsEmpty(int r, int c)
+    {
+        return r >= 0 && r < boardSize && c >= 0 && c < boardSize &&
+               board[r, c] == StoneType.None;
+    }
+
+    private int CountContinuous(int r, int c, int dx, int dy, StoneType color)
+    {
+        int count = 0;
+        int nr = r + dx, nc = c + dy;
+        while (nr >= 0 && nr < boardSize && nc >= 0 && nc < boardSize &&
+               board[nr, nc] == color)
+        {
+            count++;
+            nr += dx; nc += dy;
+        }
+        return count;
+    }
+
+    // ───────── 기존 승패 로직 ─────────
+
+    private bool CheckWin(int r, int c) // 승리 판독
+    {
+        Vector2Int[] dirs = { new Vector2Int(1,0), new Vector2Int(0,1),
+                              new Vector2Int(1,1), new Vector2Int(1,-1) };
+
+        foreach (var d in dirs)
+        {
+            int count = 1;
+            count += CountContinuous(r, c, d.x, d.y, currentTurn);
+            count += CountContinuous(r, c, -d.x, -d.y, currentTurn);
+            if (count >= 5) return true;
+        }
+        return false;
+    }
+
+    private bool IsBoardFull() // 무승부 판독
+    {
+        for (int r = 0; r < boardSize; r++)
+            for (int c = 0; c < boardSize; c++)
+                if (board[r, c] == StoneType.None) return false;
+        return true;
+    }
+
+    private void EndGame(GameResult result)
+    {
+        // ChoiYun : 게임 종료 이벤트 호출
+        OnGameEnded?.Invoke(result);
+        // UI 출력, 게임 오버 패널 띄우기 등
+        Debug.Log($"Game Over : {result}");
+
+
+        // 이하 TODO : 필요하다면 입력 막기, 재시작 버튼 활성화 등
+        // 여기서 처리 할지는 고민 중
+    }
+
+    public void ClearStone(int row, int col) // ★ 변이룰 돌 삭제 함수
+    {
+        if (row < 0 || row >= boardSize || col < 0 || col >= boardSize) return;
+        if (board[row, col] == StoneType.None) return;
+
+        board[row, col] = StoneType.None;
+
+        // 필요하면 UI(OmokController 등)에도 갱신 알림
+        OnStonePlaced?.Invoke(row, col, StoneType.None);
+
+        Debug.Log($"[GameLogic] 삭제된 돌 좌표: ({row},{col})");
+    }
+    
 }
