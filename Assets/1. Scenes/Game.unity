@@ -524,53 +524,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259903213}
   m_CullTransparentMesh: 1
---- !u!1 &300040822
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 300040823}
-  - component: {fileID: 300040824}
-  m_Layer: 0
-  m_Name: GameLogic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &300040823
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300040822}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &300040824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300040822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e600c9d0e2a1a40ea9769a60372f4fe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnCount: 1
-  boardSize: 15
-  currentPlayer: 0
 --- !u!1 &356379317
 GameObject:
   m_ObjectHideFlags: 0
@@ -4555,6 +4508,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &191117578389440763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607091531741232743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a7d8109a06042b48c8ce86fb0c72e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameLogic: {fileID: 4675096240422733515}
+  minTriggerTurn: 10
+  maxTriggerTurn: 20
+  removeStone: 2
+  excludeCenterStone: 1
 --- !u!1 &210961014527354711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4603,7 +4573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerState: {fileID: 7638057813842783967}
   omokPrefab: {fileID: 3409118808372465647, guid: c89915196d077b646aee71e5e97f04ec, type: 3}
-  gameLogic: {fileID: 300040824}
+  gameLogic: {fileID: 4675096240422733515}
   cellSize: 0.32
 --- !u!4 &2329552005787271224
 Transform:
@@ -4612,6 +4582,54 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214103824965110640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2607091531741232743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5533983010521696136}
+  - component: {fileID: 4675096240422733515}
+  - component: {fileID: 191117578389440763}
+  m_Layer: 0
+  m_Name: GameLogic+Variant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &4675096240422733515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607091531741232743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e600c9d0e2a1a40ea9769a60372f4fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnCount: 1
+  boardSize: 15
+  currentPlayer: 0
+--- !u!4 &5533983010521696136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607091531741232743}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4632,7 +4650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420ce4a2a584b42448db574369078884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLogic: {fileID: 300040824}
+  gameLogic: {fileID: 4675096240422733515}
   playerType: 0
   Notyourturn: {fileID: 813757742}
   Notmyturn: {fileID: 2024419259}
@@ -4663,7 +4681,7 @@ SceneRoots:
   - {fileID: 878905655}
   - {fileID: 2010264738}
   - {fileID: 1502197389}
-  - {fileID: 300040823}
   - {fileID: 1024042976}
   - {fileID: 2329552005787271224}
   - {fileID: 8970660996803816000}
+  - {fileID: 5533983010521696136}

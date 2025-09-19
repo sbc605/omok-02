@@ -90,7 +90,7 @@ public class OmokController : MonoBehaviour
         {
             var prevCell = board[selectedRow.Value, selectedCol.Value];
             if (prevCell.GetMarker() == Omok.MarkerType.Preview)
-            {                
+            {
                 prevCell.SetMarker(Omok.MarkerType.None);
             }
         }

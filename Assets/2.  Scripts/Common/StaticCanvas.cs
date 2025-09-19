@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StaticCanvas : Singleton<StaticCanvas>
