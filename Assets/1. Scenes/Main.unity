@@ -1196,11 +1196,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f92317cd5aae414995df5367342912f, type: 2}
   sceneMusicList:
   - sceneName: Main
-    musicClip: {fileID: 8300000, guid: 74a37eb06135eaf4bbd7ec829e439b9a, type: 3}
+    musicClip: {fileID: 8300000, guid: f50070ed663034c748596b6120ffa8b0, type: 3}
   - sceneName: Game
-    musicClip: {fileID: 8300000, guid: aa87d1c336bb30c4c9d84fed45624fa3, type: 3}
+    musicClip: {fileID: 8300000, guid: 14e5eeede6fa54508bbd5dd21b147643, type: 3}
   - sceneName: Setting
-    musicClip: {fileID: 8300000, guid: e45dd516c2ec7f64eb9e8f1dac9f88f8, type: 3}
+    musicClip: {fileID: 8300000, guid: 4ee465918d26e43b29f59a5d90491759, type: 3}
 --- !u!82 &1733061739
 AudioSource:
   m_ObjectHideFlags: 0
