@@ -57,6 +57,16 @@ public class OmokController : MonoBehaviour
     // 게임로직 결과 UI 반영
     private void HandleStonePlaced(int row, int col, GameLogic.StoneType stone)
     {
+        if (stone == GameLogic.StoneType.None) //폭팔 fx - 이재현
+        {
+            // 돌이 삭제될 때 폭발 이펙트 재생
+            board[row, col].PlayExplodeFX();
+
+            // 돌 마커 제거
+            board[row, col].SetMarker(Omok.MarkerType.None);
+            return;
+        }
+        
         var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
         board[row, col].SetMarker(markerType);
     }
