@@ -9,15 +9,16 @@ public class ClickFXController : MonoBehaviour
     [SerializeField] private Canvas canvas;
     [SerializeField] private Sprite[] frames;
 
-    [SerializeField] private SpriteRenderer board; // 오목판
-    [SerializeField] private Transform resultPanel; // 결과 패널
+    private SpriteRenderer board; // 오목판
+    private Transform resultPanel; // 결과 패널
+
 
     void Update()
     {
-        ScreentTouch();
+        ScreenTouch();
     }
 
-    void ScreentTouch()
+    void ScreenTouch()
     {
 
 #if UNITY_EDITOR || UNITY_STANDALONE // 유니티 에디터, PC 마우스 클릭
@@ -37,13 +38,16 @@ public class ClickFXController : MonoBehaviour
     }
 
     void CreateEffect(Vector2 pos)
-    {       
-        // 결과 패널이 비활성화된 상태
-        if (!IsResultPanelActive())
+    {
+        if (board != null && resultPanel != null)
         {
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(pos);
-            worldPos.z = board.transform.position.z;
-            if (board.bounds.Contains(worldPos)) return; // 오목판 내부는 이펙트 생성x
+            // 결과 패널이 비활성화된 상태
+            if (!IsResultPanelActive())
+            {
+                Vector3 worldPos = Camera.main.ScreenToWorldPoint(pos);
+                worldPos.z = board.transform.position.z;
+                if (board.bounds.Contains(worldPos)) return; // 오목판 내부는 이펙트 생성x
+            }
         }
 
         var effect = Instantiate(effectPrefab, canvas.transform);
@@ -69,6 +73,8 @@ public class ClickFXController : MonoBehaviour
 
     private bool IsResultPanelActive()
     {
+        if (resultPanel == null) return false;
+
         foreach (Transform child in resultPanel)
         {
             if (child.gameObject.activeSelf)
@@ -76,5 +82,12 @@ public class ClickFXController : MonoBehaviour
         }
 
         return false;
+    }
+
+    // 게임씬에 오면 보드, 결과패널 연결
+    public void SetGameSceneSprite(SpriteRenderer boardSR, Transform result)
+    {
+        board = boardSR;
+        resultPanel = result;
     }
 }

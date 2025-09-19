@@ -91,7 +91,7 @@ public class Omok : MonoBehaviour
 
         // 커짐
         seq.Append(transform.DOScale(Vector3.one * 1f, 0.8f).SetEase(Ease.OutBack));
-        
+
         // 크기 원래대로 돌아옴
         seq.Append(transform.DOScale(Vector3.one * 0.5f, 0.9f).SetEase(Ease.OutBounce));
 
@@ -101,13 +101,13 @@ public class Omok : MonoBehaviour
 
     // 임시 선택 애니메이션
     private void SelectCursorAnim()
-    {       
+    {
         if (markerSR.sprite == previewSprite)
         {
             markerSR.DOFade(0.3f, 0.3f).SetLoops(-1, LoopType.Yoyo);
 
             transform.localScale = Vector3.one * 0.5f;
             transform.DOScale(Vector3.one * 0.6f, 0.3f).SetLoops(-1, LoopType.Yoyo);
-        }       
+        }
     }
 }
