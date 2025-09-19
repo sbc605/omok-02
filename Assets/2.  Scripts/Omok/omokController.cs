@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Omok;
 
 public class OmokController : MonoBehaviour
 {
@@ -77,12 +78,21 @@ public class OmokController : MonoBehaviour
             return;
         }
 
-        // 이전 선택 셀이 비어있는 경우 None으로 되돌림
+        // 금수 위치인 경우 선택x
+        if (board[row, col].GetMarker() == Omok.MarkerType.Forbidden)
+        {
+            Debug.Log("금수 위치입니다.");
+            return;
+        }
+
+        // 이전 선택 셀이 Preview인 경우 None으로 되돌림
         if (selectedRow.HasValue && selectedCol.HasValue)
         {
             var prevCell = board[selectedRow.Value, selectedCol.Value];
-            if (prevCell.GetMarker() != Omok.MarkerType.None)
+            if (prevCell.GetMarker() == Omok.MarkerType.Preview)
+            {                
                 prevCell.SetMarker(Omok.MarkerType.None);
+            }
         }
 
         // 새 좌표 생성
