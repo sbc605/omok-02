@@ -8,7 +8,9 @@ public class VariantRule : MonoBehaviour
     [Header("Phase 1 설정")]
     [SerializeField] private int minTriggerTurn = 10;   // 최소 턴
     [SerializeField] private int maxTriggerTurn = 20;   // 최대 턴
-    private int triggerTurn;                            // 실제 발동 턴
+
+    // ▶ UI에서 접근할 수 있도록 public 읽기 전용 프로퍼티
+    public int TriggerTurn { get; private set; }        
 
     [Header("제거될 돌 개수")]
     [SerializeField] private int removeStone = 2;
@@ -18,6 +20,9 @@ public class VariantRule : MonoBehaviour
 
     private bool phase1Triggered = false;
     private int placementCount = 0; // 착수 횟수(초기 중앙 흑 포함)
+
+    // ▶ UI가 “발동 턴”을 알 수 있게 이벤트 추가
+    public event System.Action<int> OnPhaseReady;      
 
     private void OnEnable()
     {
@@ -30,20 +35,23 @@ public class VariantRule : MonoBehaviour
         if (gameLogic != null)
             gameLogic.OnTurnChanged -= OnTurnChanged;
     }
+
     private void Start()
     {
         // 게임 시작 시  [minTriggerTurn, maxTriggerTurn]  사이에서 무작위 발동 턴 선택
-        triggerTurn = UnityEngine.Random.Range(minTriggerTurn, maxTriggerTurn + 1);
+        TriggerTurn = UnityEngine.Random.Range(minTriggerTurn, maxTriggerTurn + 1);
 
-        Debug.Log($"[VariantRule] 이번 게임에서 변이룰 발동 턴: {triggerTurn}");
+        Debug.Log($"[VariantRule] 이번 게임 변이 발동 턴: {TriggerTurn}");
+
+        // ▶ UI에 “발동 턴”을 알림
+        OnPhaseReady?.Invoke(TriggerTurn);
     }
 
-    // GameLogic에서 한 수 둘 때마다 호출됨(초기 중앙 흑 셋업 끝난 뒤에도 1회 호출)
     private void OnTurnChanged(GameLogic.PlayerType _)
     {
         placementCount++;
 
-        if (!phase1Triggered && placementCount >= triggerTurn)
+        if (!phase1Triggered && placementCount >= TriggerTurn)
         {
             phase1Triggered = true;
             TriggerPhase1();
@@ -63,13 +71,12 @@ public class VariantRule : MonoBehaviour
     {
         var stones = GetAllStones(gl, color, excludeCenterStone);
 
-        // 제거 개수 보정
         int toRemove = Mathf.Min(count, stones.Count);
         for (int i = 0; i < toRemove; i++)
         {
             int idx = Random.Range(0, stones.Count);
             var (r, c) = stones[idx];
-            gl.ClearStone(r, c);      // ⬅️ GameLogic에 보조 메서드 추가 필요
+            gl.ClearStone(r, c);      // GameLogic에 이미 메서드 있음
             stones.RemoveAt(idx);
         }
     }
@@ -79,7 +86,6 @@ public class VariantRule : MonoBehaviour
         var list = new List<(int, int)>();
         int size = gl.boardSize;
 
-        // 중앙 좌표(초기 흑)
         int centerR = size / 2;
         int centerC = size / 2;
 
