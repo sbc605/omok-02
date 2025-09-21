@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using static Omok;
 
 public class OmokController : MonoBehaviour
@@ -6,8 +7,10 @@ public class OmokController : MonoBehaviour
     [SerializeField] private PlayerState playerState;
     [SerializeField] private Omok omokPrefab;
     [SerializeField] private GameLogic gameLogic;
-    [SerializeField] private float cellSize = 0.32f; // 셀 간격
-    private Vector2 boardOrigin = new Vector2(0, -0.24f); // 보드 시작 위치(중심)
+    [SerializeField] private Timer timer;
+
+    [SerializeField] private float cellSize = 0.3f; // 셀 간격
+    private Vector2 boardOrigin = new Vector2(0, -1f); // 보드 시작 위치(중심)
 
     private AudioSource omokEffectPlayer;
     [SerializeField] private AudioClip blackSound;
@@ -31,7 +34,9 @@ public class OmokController : MonoBehaviour
         board = new Omok[boardSize, boardSize];
 
         gameLogic.OnTurnChanged += UpdateForbiddenMarkers; // 턴마다 갱신 - 이재현
+        gameLogic.OnTurnChanged += HandleTurnChanged; // 턴 변경시 타이머 리셋
         gameLogic.OnStonePlaced += HandleStonePlaced;
+        timer.OnTimeOver += HandleTimeOver; // 타임오버시 호출
 
         // 전체 크기
         float totalSize = (boardSize - 1) * cellSize;
@@ -81,6 +86,7 @@ public class OmokController : MonoBehaviour
             omokEffectPlayer.PlayOneShot(blackSound);
         else if (stone == GameLogic.StoneType.White)
             omokEffectPlayer.PlayOneShot(whiteSound);
+
     }
 
     // 플레이어 입력 UI 반영
@@ -185,5 +191,17 @@ public class OmokController : MonoBehaviour
                 board[r, c].SetMarker(Omok.MarkerType.Forbidden);
             }
         }
+    }
+
+    private void HandleTimeOver()
+    {        
+        Debug.Log("시간 초과! 턴이 넘어갑니다.");
+        gameLogic.PassTurn(); // 착수x 턴 넘기기
+    }
+
+    // 턴이 바뀔 때 타이머 리셋
+    private void HandleTurnChanged(GameLogic.PlayerType currentPlayer)
+    {
+        timer.ResetTimer();
     }
 }
