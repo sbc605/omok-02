@@ -675,7 +675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 259903216}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891463441361433727}
+        m_TargetAssemblyTypeName: OmokController, Assembly-CSharp
+        m_MethodName: ConfirmMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &259903216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,7 +964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1031,7 +1043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0.7372549}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1224,7 +1236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &746294894
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1299,7 +1311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &806698187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2595,7 +2607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0.7372549}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2727,7 +2739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0.7372549}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3846,7 +3858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4670,53 +4682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927939895}
   m_CullTransparentMesh: 1
---- !u!1 &1984733509
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1984733511}
-  - component: {fileID: 1984733510}
-  m_Layer: 0
-  m_Name: GameLogic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1984733510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984733509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e600c9d0e2a1a40ea9769a60372f4fe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnCount: 1
-  boardSize: 15
-  currentPlayer: 0
---- !u!4 &1984733511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984733509}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010264734
 GameObject:
   m_ObjectHideFlags: 0
@@ -5122,7 +5087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a7d8109a06042b48c8ce86fb0c72e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLogic: {fileID: 0}
+  gameLogic: {fileID: 5533983010521696137}
   minTriggerTurn: 10
   maxTriggerTurn: 20
   removeStone: 2
@@ -5176,7 +5141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerState: {fileID: 7638057813842783967}
   omokPrefab: {fileID: 3409118808372465647, guid: c89915196d077b646aee71e5e97f04ec, type: 3}
-  gameLogic: {fileID: 1984733510}
+  gameLogic: {fileID: 5533983010521696137}
   timer: {fileID: 864535560}
   cellSize: 0.32
   blackSound: {fileID: 8300000, guid: 57b63fa59d63df6489d9c8272af3d2e7, type: 3}
@@ -5206,8 +5171,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5533983010521696136}
   - component: {fileID: 191117578389440763}
+  - component: {fileID: 5533983010521696137}
   m_Layer: 0
-  m_Name: GameVariant
+  m_Name: GameLogic&VariantRule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5228,6 +5194,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5533983010521696137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607091531741232743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e600c9d0e2a1a40ea9769a60372f4fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnCount: 1
+  boardSize: 15
+  currentPlayer: 0
 --- !u!114 &7638057813842783967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5240,7 +5221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420ce4a2a584b42448db574369078884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLogic: {fileID: 0}
+  gameLogic: {fileID: 5533983010521696137}
   playerType: 0
   Notyourturn: {fileID: 813757742}
   Notmyturn: {fileID: 2024419259}
@@ -5370,5 +5351,4 @@ SceneRoots:
   - {fileID: 2329552005787271224}
   - {fileID: 5533983010521696136}
   - {fileID: 8970660996803816000}
-  - {fileID: 1984733511}
   - {fileID: 842813547}
