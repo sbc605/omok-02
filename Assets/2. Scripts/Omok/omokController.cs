@@ -146,26 +146,24 @@ public class OmokController : MonoBehaviour
         int row = selectedRow.Value;
         int col = selectedCol.Value;
 
-        if (!gameLogic.PlaceStone(row, col)) // 게임로직에서 착수 시도
+        if (gameLogic.PlaceStone(row, col)) // 게임로직에서 착수 시도
         {
-            // 착수 성공 시 오목판에 표시 아래 임시주석 : 최윤
-            // var stone = gameLogic.GetStone(row, col);
-            // var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
+            // 착수 성공 시 오목판에 표시
+            var stone = gameLogic.GetStone(row, col);
+            var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
 
-            // board[row, col].SetMarker(markerType);
+            board[row, col].SetMarker(markerType);
 
-            // // 착수 효과음 재생
-            // if (stone == GameLogic.StoneType.Black)
-            //     omokEffectPlayer.PlayOneShot(blackSound);
-            // else if (stone == GameLogic.StoneType.White)
-            //     omokEffectPlayer.PlayOneShot(whiteSound);
-            // 임시주석 
-            Debug.Log("착수에 성공했습니다.");
+            // 착수 효과음 재생
+            if (stone == GameLogic.StoneType.Black)
+                omokEffectPlayer.PlayOneShot(blackSound);
+            else if (stone == GameLogic.StoneType.White)
+                omokEffectPlayer.PlayOneShot(whiteSound);
         }
-        // else
-        // {
-        //     Debug.Log("착수에 실패했습니다.");
-        // }
+        else
+        {
+            Debug.Log("착수에 실패했습니다.");
+        }
 
         // 자리 비움
         selectedRow = null;
