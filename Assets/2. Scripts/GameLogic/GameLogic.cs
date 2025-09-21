@@ -61,7 +61,15 @@ public class GameLogic : MonoBehaviour
 
         if (CheckWin(row, col))
         {
-            EndGame(GameResult.Win);
+            // 5줄을 완성한 돌이 플레이어(Black)의 돌인지 확인
+            if (currentTurn == StoneType.Black)
+            {
+                EndGame(GameResult.Win); // 플레이어 승리
+            }
+            else // 아니라면 AI(White)의 돌
+            {
+                EndGame(GameResult.Lose); // 플레이어 패배
+            }
             return true;
         }
 
@@ -250,5 +258,5 @@ public class GameLogic : MonoBehaviour
 
         Debug.Log($"[GameLogic] 삭제된 돌 좌표: ({row},{col})");
     }
-    
+
 }

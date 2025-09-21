@@ -38,12 +38,18 @@ public class Timer : MonoBehaviour
 
         // 0 ~ 1 비율 계산
         float ratio = Mathf.Clamp01(currTime / time);
-        timeBar.rectTransform.sizeDelta = new Vector2(originWidth * ratio, timeBar.rectTransform.sizeDelta.y);       
+        timeBar.rectTransform.sizeDelta = new Vector2(originWidth * ratio, timeBar.rectTransform.sizeDelta.y);
     }
 
     public void ResetTimer()
     {
         currTime = time;
         timeBar.rectTransform.sizeDelta = new Vector2(originWidth, timeBar.rectTransform.sizeDelta.y);
+    }
+    
+    // 타이머 정지 (게임 종료 시)
+    public void StopTimer()
+    {
+        this.enabled = false; // Update 함수를 멈추는 가장 간단한 방법
     }
 }

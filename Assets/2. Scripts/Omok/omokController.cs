@@ -92,6 +92,9 @@ public class OmokController : MonoBehaviour
     // 플레이어 입력 UI 반영
     public void OnCellClicked(int row, int col)
     {
+        // ▼▼▼ GameManager의 스위치를 확인하여 게임이 끝났으면 입력을 무시 ▼▼▼ 윤
+        if (GameManager.Instance.IsGameOver()) return;
+
         // 내 턴이 아닌 경우 무시
         if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
@@ -136,7 +139,6 @@ public class OmokController : MonoBehaviour
     {
         if (!selectedRow.HasValue || !selectedCol.HasValue) return;
 
-        // 내 턴이 맞는지 확인
         if (playerState.GetPlayerType() != gameLogic.currentPlayer)
         {
             Debug.Log("상대방의 턴입니다.");
@@ -148,24 +150,14 @@ public class OmokController : MonoBehaviour
 
         if (gameLogic.PlaceStone(row, col)) // 게임로직에서 착수 시도
         {
-            // 착수 성공 시 오목판에 표시
-            var stone = gameLogic.GetStone(row, col);
-            var markerType = (stone == GameLogic.StoneType.Black) ? Omok.MarkerType.Black : Omok.MarkerType.White;
-
-            board[row, col].SetMarker(markerType);
-
-            // 착수 효과음 재생
-            if (stone == GameLogic.StoneType.Black)
-                omokEffectPlayer.PlayOneShot(blackSound);
-            else if (stone == GameLogic.StoneType.White)
-                omokEffectPlayer.PlayOneShot(whiteSound);
+            // ▼▼▼ 착수 성공 시 GameManager에 보고하는 코드 추가 ▼▼▼
+            GameManager.Instance.OnPlayerMoveConfirmed(new Vector2Int(row, col));
         }
         else
         {
             Debug.Log("착수에 실패했습니다.");
         }
 
-        // 자리 비움
         selectedRow = null;
         selectedCol = null;
     }
@@ -194,7 +186,7 @@ public class OmokController : MonoBehaviour
     }
 
     private void HandleTimeOver()
-    {        
+    {
         Debug.Log("시간 초과! 턴이 넘어갑니다.");
         gameLogic.PassTurn(); // 착수x 턴 넘기기
     }

@@ -16,5 +16,5 @@ MonoBehaviour:
   requiredFavorability: 100
   aiDifficulty: 2
   winBonus: 50
-  losePenalty: 40
-  entryFee: 20
+  losePenalty: 100
+  entryFee: 30
