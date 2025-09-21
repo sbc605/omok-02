@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     private SimpleAI simpleAI;
     private ResultPanelController resultPanelController;
     private Timer timer;
+    private TurnAndVariantUI turnAndVariantUI;
 
     // --- AI 턴 관리 ---
     private bool isAITurnProcessing = false;
@@ -82,6 +83,7 @@ public class GameManager : Singleton<GameManager>
         simpleAI = FindFirstObjectByType<SimpleAI>();
         resultPanelController = FindFirstObjectByType<ResultPanelController>(FindObjectsInactive.Include);
         timer = FindFirstObjectByType<Timer>();
+        turnAndVariantUI = FindFirstObjectByType<TurnAndVariantUI>(); 
 
         if (gameLogic != null && simpleAI != null)
         {
@@ -132,6 +134,13 @@ public class GameManager : Singleton<GameManager>
     {
         isGameOver = true;
         if (timer != null) timer.StopTimer();
+
+        if (currentRank == null) return;
+
+        if (turnAndVariantUI != null)
+        {
+            turnAndVariantUI.HideUI();
+        }
 
         if (currentRank == null) return;
 
