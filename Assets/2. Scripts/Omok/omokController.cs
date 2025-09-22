@@ -10,7 +10,7 @@ public class OmokController : MonoBehaviour
     [SerializeField] private Timer timer;
 
     [SerializeField] private float cellSize = 0.3f; // 셀 간격
-    private Vector2 boardOrigin = new Vector2(0, -1f); // 보드 시작 위치(중심)
+    private Vector2 boardOrigin = new Vector2(0, -1.19f); // 보드 시작 위치(중심)
 
     private AudioSource omokEffectPlayer;
     [SerializeField] private AudioClip blackSound;
